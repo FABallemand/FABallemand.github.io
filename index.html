@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="icon" href="ressource/icon.jpg" type="image/x-icon">
+	<link rel="icon" href="img/icon.jpg" type="image/x-icon">
 	<title>Fabien Allemand</title>
 	<meta name="author" content="Fabien Allemand">
 	<meta name="description"
@@ -13,37 +13,111 @@
 
 <body>
 	<h1>Fabien Allemand</h1>
-	<hr>
-	<h2>Introduction</h2>
 
-	<p>
-		This is my <em>personnal</em> website.<br>
-		You can find all my <strong>projects</strong> <a href="projects/projects.html">here</a>.
-		<br>&nbsp;-<abbr title="C/C++ and many others!">Programming</abbr>
-		<br>&nbsp;-3D-Printing
-		<br>&nbsp;-Micro-engraving
+	<hr>
+
+	<nav>
+		<ul>
+			<li>
+				<a href="#introduction">Introduction</a>
+			</li>
+			<li>
+				<a href="#videos">Videos</a>
+			</li>
+		</ul>
+	</nav>
+
+	<hr>
+
+	<section id="introduction">
+		<h2>Introduction</h2>
+
+		<img src="img/icon.jpg" alt="A picture of me." title="A picture of me in Spain." width="200">
+		<img src="img/icon.jpg" alt="A picture of me." title="A picture of me in Spain." width="200" height="200">
+		<!-- recommanded -->
+
+		<p>
+			&nbsp;This is my <em>personnal</em> website.<br>
+			You can find all my <strong>projects</strong> <a href="projects/projects.html">here</a>.<br>
+		<ol>
+			<li><abbr title="C/C++ and many others!">Programming</abbr></li>
+			<ul>
+				<li>Python</li>
+				<li>C/C++</li>
+				<li>HTML</li>
+				<figure>
+					<figcaption>Some code</figcaption>
+					<p>
+						<code>
+							int a = 200;
+							int b = 300;
+							return 0;
+						</code>
+					</p>
+				</figure>
+			</ul>
+			<li>3D-Printing</li>
+			<dl>
+				<dt>Technical objects</dt>
+				<dd>Such as a lamp</dd>
+
+				<dt>Decorative objects</dt>
+				<dd>Such as a key-holder</dd>
+			</dl>
+			<li>Micro-engraving</li>
+			<figure>
+				<img src="img/project.png" alt="A project" title="A picture of a recent project." width="960">
+				<figcaption>Not a PCB but it's a project nonetheless.</figcaption>
+			</figure>
+		</ol>
 		<br>
 		And my adress:
-	<address>13 Impasse des Airelles, 67400, Illkirch-Graffenstaden, France</address>
-	</p>
+		<address>13 Impasse des Airelles, 67400, Illkirch-Graffenstaden, France</address>
+		</p>
 
-	<p>
-		This is a paragraph where I can write some text. Isn't it amazing??
-	</p>
+		<p>
+			This is a paragraph where I can write some text. Isn't it amazing??
+		</p>
+	</section>
 
-	<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?">
-		This is a first video.
-	</iframe>
+	<section id="videos">
+		<h2>Videos</h2>
 
-	<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
-		This is a video playing automatically.
-	</iframe>
+		<ul>
+			<li>
+				Download a <a href="img/icon.jpg" download>picture of me</a> !!
+			</li>
+			<li>
+				Contact me at <a href="mailto:allemand.fabien@orange.fr">my email adress</a>.
+			</li>
+			<li>
+				Contact me at <a href="tel:0607076389">my phone number</a>.
+			</li>
+			<li>
+				Open <a href="https://www.google.fr/" target="_blank">Google</a> in a new tab.
+			</li>
+		</ul>
+
+		<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?">
+			This is a first video.
+		</iframe>
+
+		<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
+			This is a video playing automatically.
+		</iframe>
+	</section>
 
 	<hr>
+
+	<img src="img/icon.jpg" alt="A picture of me." title="A picture of me in Spain." width="588" height="771"
+		loading="lazy"> <!-- recommanded -->
 
 	<div style="text-align:center">
 		<a href="https://github.com/FABallemand">GitHub</a> | <a
-			href="https://www.linkedin.com/in/fabien-allemand-309b93208/">LinkedIn</a><br>
+			href="https://www.linkedin.com/in/fabien-allemand-309b93208/">LinkedIn</a>
+		<br>
+		<a href="#">Back to top.</a>
+		<a href="/">Back to home.</a>
 	</div>
 
 	&lt;&lt;&lt; &copy; Fabien Allemand &gt;&gt;&gt;
