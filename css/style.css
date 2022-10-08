@@ -1,0 +1,65 @@
+* {
+    font-family: monospace;
+} /*select everything*/
+
+html {
+    font-size: 22px;
+}
+
+body {
+    /* font-size: 22px; */
+    background-color: #333;
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+main {
+    font-family: Arial;
+}
+
+h1, h2, h3 {
+    color: maroon;
+}
+
+p {
+    color: purple;
+}
+
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+    color: rgba(255,0,0,0.25)
+} /*not recommanded*/
+
+.gray {
+    color: gray;
+}
+
+#videos {
+    color: red;
+    font-style: italic;
+} /*not recommanded*/
+
+a {
+    color: aliceblue;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover,
+a:active {
+    color: #eee;
+}
+
+table,
+tr,
+th,
+td,
+caption {
+    border: 1px solid #eee;
+    font-family: 'Courire New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
