@@ -25,6 +25,9 @@
 				<li>
 					<a href="#videos">Videos</a>
 				</li>
+				<li>
+					<a href="#contact">Contact me!</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -73,9 +76,6 @@
 					<figcaption>Not a PCB but it's a project nonetheless.</figcaption>
 				</figure>
 			</ol>
-			<br>
-			And my adress:
-			<address>13 Impasse des Airelles, 67400, Illkirch-Graffenstaden, France</address>
 			</p>
 
 			<p>
@@ -112,8 +112,138 @@
 
 		<hr>
 
-		<img src="img/icon.jpg" alt="A picture of me." title="A picture of me in Spain." width="588" height="771"
-			loading="lazy"> <!-- recommanded -->
+		<section id="contact">
+			<h2>Contact</h2>
+
+			<img src="img/icon.jpg" alt="A picture of me." title="A picture of me in Spain." width="588" height="771"
+				loading="lazy"> <!-- recommanded -->
+			<br>
+
+			<p>Here are some ways to get in touch with me. But you can also fill the form underneeth.</p>
+
+			<ul>
+				<li>
+					Contact me at <a href="mailto:allemand.fabien@orange.fr">my email adress</a>.
+				</li>
+				<li>
+					Contact me at <a href="tel:0607076389">my phone number</a>.
+				</li>
+				<li>
+					Contact me at <a href="https://www.linkedin.com/in/fabien-allemand-309b93208/">LinkedIn</a>.
+				</li>
+				<li>
+					Follow me on <a href="https://github.com/FABallemand">GitHub</a>.
+				</li>
+				<li>And my adress:
+					<address>13 Impasse des Airelles, 67400, Illkirch-Graffenstaden, France</address>
+				</li>
+			</ul>
+
+			<p>Here is the little form to contact me. Feel free to ask any question.</p>
+
+			<form action="https://httpbin.org/get" method="get">
+				<fieldset>
+					<legend>Personal Informations</legend>
+					<p>
+						<label for="firstName">First name:</label>
+						<input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required
+							autofocus>
+						<!--autocomplete = suggestions-->
+					</p>
+					<p>
+						<label for="lastName">Last name:</label>
+						<input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+						<!--autocomplete = suggestions-->
+					</p>
+					<p>
+						<label for="password">Password:</label>
+						<input type="password" name="password" id="password" required>
+						<!--autocomplete = suggestions-->
+					</p>
+					<p>
+						<label for="phone">Phone number:<Plabel>
+								<input type="tel" name="phone" id="phone" placeholder="0607076389" pattern="[0-9]{10}"
+									required>
+								<!--autocomplete = suggestions-->
+					</p>
+					<p>
+						<label for="yob">Year of birth:<Plabel>
+								<input type="number" name="yob" id="yob" placeholder="2002" pattern="[0-9]{4}"
+									min="1950" max="2022" step="1" value="2000">
+								<!--autocomplete = suggestions-->
+					</p>
+					<p>
+						<label for="os">Operating system:</label>
+						<select name="os" id="os">
+							<optgroup label="Microsoft">
+								<option value="windows11">Windows 11</option>
+								<option value="windows10">Windows 10</option>
+								<option value="windows8">Windows 8</option>
+							</optgroup>
+							<option value="mac">Mac</option>
+							<option value="unix" selected>Any Unix distro</option>
+						</select>
+					</p>
+					<p>
+						<label for="secondary-os">Secondary perating system:</label>
+						<input type="text" name="secondary-os" id="secondary-os" list="os-list">
+						<datalist id="os-list">
+							<option value="windows11">Windows 11</option>
+							<option value="windows10">Windows 10</option>
+							<option value="windows8">Windows 8</option>
+							<option value="mac">Mac</option>
+							<option value="unix" selected>Any Unix distro</option>
+						</datalist>
+					</p>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Other Relevant Informations</legend>
+					<p>
+						<input type="radio" name="cpu" id="intel" values="intel">
+						<label for="intel">Intel</label>
+
+						<input type="radio" name="cpu" id="amd" values="amd">
+						<label for="amd">AMD</label>
+					</p>
+					<p>
+						<input type="radio" name="gpu" id="nvidia" values="nvidia">
+						<label for="nvidia">Nvidia</label>
+
+						<input type="radio" name="gpu" id="radeon" values="radeon">
+						<label for="radeon">AMD</label>
+					</p>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Storage</legend>
+					<p>
+						<input type="checkbox" name="storage" id="ssd" value="ssd">
+						<label for="ssd">SSD</label>
+					</p>
+					<p>
+						<input type="checkbox" name="storage" id="hdd" value="hdd">
+						<label for="hdd">HDD</label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Send me a message</legend>
+					<label for="message">Your message</label>
+					<br>
+					<textarea name="message" id="message" cols="30" rows="10" placeholder="Type here!"></textarea>
+				</fieldset>
+				<br>
+				<button type="submit">
+					Submit
+				</button>
+				<button type="submit" formaction="https://httpbin.org/post" formmethod="post"><!--Maybe better, see url??-->
+					Post
+				</button>
+				<button type="reset">
+					Reset
+				</button>
+			</form>
+		</section>
 	</main>
 
 	<hr>
