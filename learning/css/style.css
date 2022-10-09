@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+main {
+    font-family: Arial;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 15%;
+    min-height: 100vh;
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 85%;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 0.5em;
+}
+
+h2,
+h3 {
+    color: maroon;
+}
+
+p {
+    color: purple;
+}
+
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+    color: rgba(255, 0, 0, 0.25)
+}
+
+/*not recommanded*/
+
+.gray {
+    color: gray;
+}
+
+#videos {
+    color: red;
+    font-style: italic;
+}
+
+/*not recommanded*/
+
+a {
+    color: aliceblue;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover,
+a:active {
+    color: #eee;
+}
+
+table,
+tr,
+th,
+td,
+caption {
+    border: 1px solid #eee;
+    font-family: 'Courire New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}

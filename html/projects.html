@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Fabien Allemand | Projects</title>
+	<meta name="author" content="Fabien Allemand">
+	<meta name="description" content="Projects">
+	<link rel="icon" href="ressource/icon.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>
+			Projects
+		</h1>
+	</header>
+
+	<main>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="#">Presentation</a>
+			<a href="#">Education</a>
+			<a href="#">Projects</a>
+			<a href="#">Contact</a>
+		</div>
+
+		<div class="main">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+			<p></p>
+		</div>
+
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "15%";
+				document.getElementById("main").style.marginLeft = "250px";
+				document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+				document.getElementById("main").style.marginLeft = "0";
+				document.body.style.backgroundColor = "white";
+			}
+		</script>
+	</main>
+
+	<hr>
+
+	<footer>
+	</footer>
+</body>
+
+</html>

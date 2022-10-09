@@ -1,44 +1,62 @@
 * {
-    font-family: monospace;
-} /*select everything*/
-
-html {
-    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    /* font-size: 22px; */
-    background-color: #333;
-    color: whitesmoke;
-    border: 3px solid black;
+header {
+    margin-left: 15%;
+    /* Same as the width of the sidenav */
 }
 
-main {
-    font-family: Arial;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
 }
 
-h1, h2, h3 {
-    color: maroon;
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-p {
-    color: purple;
+.sidenav a:hover {
+    color: #f1f1f1;
 }
 
-p span {
-    text-transform: uppercase;
-    background-color: gold;
-    color: rgba(255,0,0,0.25)
-} /*not recommanded*/
-
-.gray {
-    color: gray;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-#videos {
-    color: red;
-    font-style: italic;
-} /*not recommanded*/
+.main {
+    margin-left: 15%;
+    /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
 
 a {
     color: aliceblue;
@@ -51,15 +69,4 @@ a:visited {
 a:hover,
 a:active {
     color: #eee;
-}
-
-table,
-tr,
-th,
-td,
-caption {
-    border: 1px solid #eee;
-    font-family: 'Courire New', Courier, monospace;
-    border-collapse: collapse;
-    padding: 0.5rem;
 }
