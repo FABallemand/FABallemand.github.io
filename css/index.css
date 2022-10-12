@@ -106,6 +106,14 @@ h1 {
     padding: 0.5em;
 }
 
+span {
+    font-weight: bold;
+}
+
+p {
+    padding-left: 5%;
+}
+
 a {
     color: aliceblue;
 }
@@ -121,4 +129,24 @@ a:active {
 
 img {
     padding: 10px;
+}
+
+ul {
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.small_list {
+    padding-left: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+date:before {
+    content: "🗓 ";
+}
+
+address:before {
+    content: "📍 ";
 }
