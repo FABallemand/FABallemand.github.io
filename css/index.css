@@ -149,6 +149,10 @@ ul {
     width: 50rem;
 }
 
+.center {
+    text-align: center;
+}
+
 date:before {
     content: "🗓 ";
 }
