@@ -46,9 +46,10 @@ ul {
     padding-left: 3rem;
 }
 
-table {
-    
-}
+/* iframe {
+    display: block;
+    width: 100%;
+} */
 
 a {
     color: aliceblue;
