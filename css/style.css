@@ -20,6 +20,49 @@ footer {
     margin-left: 260px;
 }
 
+h1 {
+    font-size: 2rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-left: 3rem;
+}
+
+p {
+    padding: 0.5rem;
+}
+
+ul {
+    padding-left: 3rem;
+}
+
+table {
+    
+}
+
+a {
+    color: aliceblue;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover,
+a:active {
+    color: #eee;
+}
+
 .center {
     text-align: center;
 }
