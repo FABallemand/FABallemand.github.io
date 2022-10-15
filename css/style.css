@@ -67,3 +67,7 @@ a:active {
 .center {
     text-align: center;
 }
+
+.warning:before {
+    content: "⚠ ";
+}

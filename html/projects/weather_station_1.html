@@ -27,21 +27,70 @@
                 Strasbourg...
             </p>
             <p>
-                Strasbourg is a really nice city with a very interesting background, a unique local culture and a lot of delicious meals. The only issue being the weather which is notably cold and humid with a noticeable lack of sun.
+                Strasbourg is a really nice city with a very interesting background, a unique local culture and a lot of
+                delicious meals. The only issue being the weather which is notably cold and humid with a noticeable lack
+                of sun.
             </p>
             <p>
-                One morning while walking in the fog to my school I felt the unpleasant sensation of condensation on my moustache and I wondered how cold and humid it was. I immediately wanted to build some sort of weather station to monitor temperature and humidity!
+                One morning while walking in the fog to my school I felt the unpleasant sensation of condensation on my
+                moustache and I wondered how cold and humid it was. I immediately wanted to build some sort of weather
+                station to monitor temperature and humidity!
             </p>
         </section>
         <section>
             <h2>
                 Learning Arduino Basics
             </h2>
+            <p>
+                I thought it was a great opportunity to finally use some <a href="https://www.arduino.cc/">Arduinos</a>.
+                <br>
+                After some online research I bought a couple of Arduino boards and a bunch of modules to play with:
+            <ul>
+                <li>
+                    AHT-10 Temperature and humidity sensor
+                </li>
+                <li>
+                    HW-111 Real time clock
+                </li>
+                <li>
+                    FS1000A/MX-RM-5V aka the cheapest 433MHz wireless emitter/receiver combo
+                </li>
+                <li>
+                    16x2 LCD Display
+                </li>
+            </ul>
+            The initial goal was to make a little device that can display the current date and time as well as the
+            temperature and humidity inside and outside. I grabbed a breadboard and started prototyping!
+            </p>
+            <img src="../../ressource/img/projects/weather_station_1/1.jpg" alt="Picture of the breadboard."
+                title="Final prototype." width="480" height="270">
+            <p>
+                After a healthy amount of trial-and-error and debugging I obtained this little plate of spaghetti. But
+                it worked!
+            </p>
+            <p>
+                After more reflexion I decided to replace the two potentiometers that allow to adjust the display's luminosity for a Light Dynamic Resistor (LDR) which will allow me to adjust the brightness of the screen through software according to the room luminosity.
+            </p>
+            <p>
+                After further investigation, the wireless modules that I used are not very good. They require an additional antena otherwise they only work if they are half a breadboard away from each other. Moreover, having a module mesuroing temperature outside means battery, a subject that I did not had time to tackle just yet. So I momentarily abandonned the outside probe.
+            </p>
         </section>
         <section>
             <h2>
                 Custom PCB
             </h2>
+            <p>
+                As I wanted to create a very basic device (with a basic rectangle enclosure) I simply made a rectangle
+                PCB with reasonable dimensions using <a href="https://www.kicad.org/">KiCad</a>.
+            </p>
+            <p class="warning">Be careful while designing your PCB! You have to take into account on which face you want
+                to place each component otherwise you might not be able to solder it...
+            </p>
+            <p>
+                The next step was obviously to go to <a href="http://fablab.telecom-ps.unistra.fr/doku.php" target="_blank">Télécom Physique Strasbourg's FabLab</a> and make the PCB using the <a href="https://www.lpkfusa.com/products/pcb_prototyping/machines/protomat_s64/" target="_blank">Protomat-S64</a>.
+                <br>
+                After a bit of (bad) soldering work and repair (because I burned a trace while unsoldering the 16 pin LCD) I obtained this beautiful weather station.
+            </p>
         </section>
         <section>
             <h2>
