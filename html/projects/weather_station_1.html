@@ -69,10 +69,15 @@
                 it worked!
             </p>
             <p>
-                After more reflexion I decided to replace the two potentiometers that allow to adjust the display's luminosity for a Light Dynamic Resistor (LDR) which will allow me to adjust the brightness of the screen through software according to the room luminosity.
+                After more reflexion I decided to replace the two potentiometers that allow to adjust the display's
+                luminosity for a Light Dynamic Resistor (LDR) which will allow me to adjust the brightness of the screen
+                through software according to the room luminosity.
             </p>
             <p>
-                After further investigation, the wireless modules that I used are not very good. They require an additional antena otherwise they only work if they are half a breadboard away from each other. Moreover, having a module mesuroing temperature outside means battery, a subject that I did not had time to tackle just yet. So I momentarily abandonned the outside probe.
+                After further investigation, the wireless modules that I used are not very good. They require an
+                additional antena otherwise they only work if they are half a breadboard away from each other. Moreover,
+                having a module mesuroing temperature outside means battery, a subject that I did not had time to tackle
+                just yet. So I momentarily abandonned the outside probe.
             </p>
         </section>
         <section>
@@ -87,15 +92,61 @@
                 to place each component otherwise you might not be able to solder it...
             </p>
             <p>
-                The next step was obviously to go to <a href="http://fablab.telecom-ps.unistra.fr/doku.php" target="_blank">Télécom Physique Strasbourg's FabLab</a> and make the PCB using the <a href="https://www.lpkfusa.com/products/pcb_prototyping/machines/protomat_s64/" target="_blank">Protomat-S64</a>.
+                The next step was obviously to go to <a href="http://fablab.telecom-ps.unistra.fr/doku.php"
+                    target="_blank">Télécom Physique Strasbourg's FabLab</a> and make the PCB using the <a
+                    href="https://www.lpkfusa.com/products/pcb_prototyping/machines/protomat_s64/"
+                    target="_blank">Protomat-S64</a>.
                 <br>
-                After a bit of (bad) soldering work and repair (because I burned a trace while unsoldering the 16 pin LCD) I obtained this beautiful weather station.
+                After a bit of (bad) soldering work and repair (because I burned a trace while unsoldering the 16 pin
+                LCD) I obtained this beautiful weather station.
             </p>
+
+            <table>
+                <tr>
+                    <th>
+                        <img src="../../ressource/img/projects/weather_station_1/2.jpg"
+                            alt="Weather station Arduino side." title="Weather station Arduino side." width="480"
+                            height="270">
+                    </th>
+                    <th>
+                        <img src="../../ressource/img/projects/weather_station_1/3.jpg" alt="Weather station LCD side."
+                            title="Weather station LCD side." width="480" height="270">
+                    </th>
+                </tr>
+            </table>
         </section>
         <section>
             <h2>
                 3D-printed Enclosure
             </h2>
+            <p>
+                Obviously if I want to use it I have to put it into some sort of enclosure not only to protect it but
+                also to make it stand up. As I was a 3D-printing novice I settled for a very simple design with no back
+                panel and three holes to accomodate the screen, the LDR and the Arduino's USB port.
+                <br>
+                As you can see on the picture underneath the first print turned out perfect on apparence. But in fact
+                the walls are a little to flexible and looking at it closely you will notice that the hole for the LDR
+                is not where it should be... oups 🤭
+            </p>
+            <img src="../../ressource/img/projects/weather_station_1/4.jpg" alt="Weather station LCD side."
+                title="Weather station LCD side." width="270" height="480">
+            <!-- <video width="480" height="270" controls muted>
+                <source src="../../ressource/img/projects/weather_station_1/3D_print_1.mp4" type="video/mp4">
+            </video> -->
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+            [Picture of the final assembly coming soon]
+            <p>
+                With a little time and effort I managed to create a simple weather station based on Arduino. It is able
+                to keep track of time and measure both temperature and humidity. These three informations are easily
+                readable on a LCD screen which brightness adapt in function of the ambiant luminosity. All the
+                electronic modules are connected via a custom PCB and secured in a 3D-printed enclosure.
+            </p>
+            <p>
+                While this first version allowed me to learn the basics it could also be improved. I already have some
+                ideas regarding other captors, buttons to navigate in the UI, wireless transmission and batteries.
+            </p>
         </section>
 
     </main>

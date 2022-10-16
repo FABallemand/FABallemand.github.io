@@ -20,6 +20,10 @@ footer {
     margin-left: 260px;
 }
 
+section {
+    display: flow-root;
+}
+
 h1 {
     font-size: 2rem;
     padding: 0.5rem;
@@ -70,4 +74,14 @@ a:active {
 
 .warning:before {
     content: "⚠ ";
+}
+
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.right {
+    float: right;
+    margin-left: 1rem;
 }
