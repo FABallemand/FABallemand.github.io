@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fabien Allemand | Audio Amplifier</title>
+    <meta name="author" content="Fabien Allemand">
+    <meta name="description" content="Projects">
+    <link rel="icon" href="ressource/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/sidenav.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Audio Amplifier
+        </h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>
+                The sound of DIY
+            </h2>
+            <p>
+                <!-- I was (and I am still) very impressed by the DIY bluetooth speaker made by <a href="https://diyperks.com/" target="_blank">DIYPerks</a> and I always wanted to do something similar.  -->
+                I had already made/improved a little portable speaker by reusing the circuit board of an old cheap
+                speaker, pairing it with a better speaker and putting it in a "stylish" (but impractical) wooden case.
+            </p>
+            <p>
+                But having learnt how to create my own PCBs (with Iron Peroxyde III) I wanted to create my very own
+                speakers to use on my desk. Let me clarify: I wanted a set of speakers that I could use both via cable
+                with my computer and via bluetooth with my phone. The final speaker was supposed to seat on my desk,
+                serving as a screen stand for my main monitor.
+            </p>
+            <p>
+                I already had a pair of old JBL mid-range speakers and I found a <a
+                    href="https://www.alldatasheet.fr/datasheet-pdf/pdf/25037/STMICROELECTRONICS/TDA2005.html"
+                    target="_blank">TDA-2005</a> in my garage. All was left to do was to mount everything together!!
+            </p>
+        </section>
+        <section>
+            <h2>
+                The amplifier circuit
+            </h2>
+            <p>
+                I was really pleased when I saw there were already a couple examples in the <a
+                    href="https://www.alldatasheet.fr/datasheet-pdf/pdf/25037/STMICROELECTRONICS/TDA2005.html"
+                    target="_blank">TDA-2005</a> datasheet showing different ways to use it. I settled for a basic
+                circuit using a single IC to drive two speakers.
+            </p>
+            <img src="../../ressource/img/projects/tda_2005_audio_amp/circuit.PNG" alt="Circuit diagram"
+                title="Circuit diagram" width="485" height="371">
+            <p>
+                I designed the circuit using <a href="https://www.kicad.org/" target="_blank">KiCad</a> and made the
+                first board. After testing: it did not work. So I made another one with a couple changes: same result.
+                For my defense I was stuck with single face PCB so the wiring was not easy and certainly not ideal.
+                Unfortunatly, the project momentarily stopped...
+            </p>
+            <p>
+                Until I learnt how to use the <a
+                    href="https://www.lpkf.com/en/industries-technologies/research-in-house-pcb-prototyping/produkte/lpkf-protomat-s64"
+                    target="_blank">Protomat S64</a> that was available at my new school's <a
+                    href="http://fablab.telecom-ps.unistra.fr/doku.php" target="_blank">FabLab</a>. I did not want to
+                rush things again so I wanted to test the circuit on breadboards. Due to the pin layout of the amplifier
+                IC I had to create a custom PCB to test everything.
+            </p>
+            <table>
+                <tr>
+                    <th colspan="2">
+                        <img src="../../ressource/img/projects/tda_2005_audio_amp/pinout.PNG" alt="tda-2005 pinout"
+                            title="TDA-2005 pinout" width="640" height="249">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="../../ressource/img/projects/tda_2005_audio_amp/socket_1.jpg" alt="Prototyping socket"
+                            title="Prototyping socket" width="270" height="480">
+                    </th>
+                    <th>
+                        <img src="../../ressource/img/projects/tda_2005_audio_amp/socket_2.jpg" alt="Prototyping socket with TDA-2005"
+                        title="Prototyping socket with TDA-2005" width="270" height="480">
+                    </th>
+                </tr>
+            </table>
+            <p>
+                Then I re-created the circuit on the breadboard and...
+            </p>
+            <video width="270" height="480" controls>
+                <source src="../../ressource/img/projects/tda_2005_audio_amp/test_1.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section>
+            <h2>
+                ...
+            </h2>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p class="center">
+            &copy; Fabien Allemand
+        </p>
+    </footer>
+</body>
+
+</html>

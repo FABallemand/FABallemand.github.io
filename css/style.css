@@ -4,21 +4,22 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #BBB;
 }
 
-header {
+header, main, footer {
     margin-left: 260px;
 }
 
-main {
-    margin-left: 260px;
-}
-
-footer {
-    margin-left: 260px;
-}
+/* footer {
+    position: fixed;
+    bottom: 0;
+} */
 
 section {
     display: flow-root;
@@ -84,4 +85,10 @@ a:active {
 .right {
     float: right;
     margin-left: 1rem;
+}
+
+.sticky {
+    background-color: #AAA;
+    position: sticky;
+    top: 0;
 }
