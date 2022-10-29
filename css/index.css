@@ -170,3 +170,7 @@ date:before {
 address:before {
     content: "📍 ";
 }
+
+.iframe-container {
+    text-align: center;
+}
