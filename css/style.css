@@ -104,3 +104,7 @@ date:before {
 address:before {
     content: "📍 ";
 }
+
+table p {
+    font-weight: normal;
+}
