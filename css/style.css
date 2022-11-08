@@ -92,3 +92,15 @@ a:active {
     position: sticky;
     top: 0;
 }
+
+.hiden {
+    display: none;
+}
+
+date:before {
+    content: "🗓 ";
+}
+
+address:before {
+    content: "📍 ";
+}
