@@ -87,6 +87,10 @@ a:active {
     margin-left: 1rem;
 }
 
+.right {
+    float: center;
+}
+
 .sticky {
     background-color: #AAA;
     position: sticky;
