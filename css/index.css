@@ -1,8 +1,17 @@
+/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    display: block;
+}
+
+/* End Reset */
+/* All Page */
 
 html {
     scroll-behavior: smooth;
@@ -22,93 +31,6 @@ main {
 
 footer {
     margin-left: 260px;
-}
-
-.sidenav {
-    height: 100%;
-    width: 260px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #333;
-    overflow-x: hidden;
-}
-
-.sidenav a {
-    padding: 10px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-}
-
-.subnav {
-    float: left;
-    overflow: hidden;
-}
-
-.subnav .subnavbtn {
-    width: 260px;
-    text-align: left;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 2px 15px 2px 15px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.sidenav a:hover,
-.subnav:hover .subnavbtn {
-    color: #f1f1f1;
-    background-color: #F00;
-}
-.subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: #BBB;
-    width: 260px;
-    z-index: 1;
-}
-
-.subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-}
-
-.subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-}
-
-.subnav:hover .subnav-content {
-    display: block;
-}
-
-.subnav-content-cat {
-    width: 260px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
-/* Clear floats after the columns */
-section::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 h1 {
@@ -142,30 +64,10 @@ a:active {
     color: #eee;
 }
 
-img {
-    padding: 10px;
-}
-
 ul {
     padding-left: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
-}
-
-.small_list {
-    padding-left: 2%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-}
-
-.presentation {
-    text-align: left;
-    font-weight: none;
-    width: 50rem;
-}
-
-.center {
-    text-align: center;
 }
 
 date:before {
@@ -176,6 +78,109 @@ address:before {
     content: "📍 ";
 }
 
-.iframe-container {
-    text-align: center;
+/* End All Page */
+/* Utility Classes */
+
+.small_list {
+    padding-left: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* End Utility Classes */
+/* Presentation */
+
+.presentation-container {
+    background-color: #BBB;
+    background-image: url('../ressource/img/trips/betesa_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.presentation {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+
+    /* background-color: #BBB;
+    background-image: url('../ressource/img/trips/betesa_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    background-color: hsla(0, 0%, 0%, 0.20);
+}
+
+.h1 {
+    font-size: 400%;
+
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000;
+
+    /* background-color: hsla(0, 0%, 0%, 0.40);
+    padding: 0.25rem;
+    border-radius: 10px; */
+}
+
+.presentation-pic-figure {
+    width: 35%;
+}
+
+.presentation-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 250px;
+    border: 5px double black;
+    border-radius: 50%;
+}
+
+/* End presentation */
+/* News */
+
+.news-pic-figure {
+    width: 100%;
+}
+
+.news-pic-figure img {
+    display: block;
+    width: 80%;
+    height: auto;
+    min-width: 100px;
+    /* border: 5px double black;
+    border-radius: 5%; */
+}
+
+/* End news */
+/* Contact */
+
+/* .contact-pic-figure {
+    width: 15%;
+}
+
+.contact-pic-figure img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+} */
+
+.contact-pic-img {
+    display: inline;
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+}
+
+/* End contact */

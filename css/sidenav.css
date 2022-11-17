@@ -23,6 +23,8 @@
 }
 
 .subnav .subnavbtn {
+    width: 260px;
+    text-align: left;
     font-size: 16px;
     border: none;
     outline: none;
@@ -36,14 +38,14 @@
 .sidenav a:hover,
 .subnav:hover .subnavbtn {
     color: #f1f1f1;
+    background-color: #F00;
 }
-
 .subnav-content {
     display: none;
     position: absolute;
     left: 0;
     background-color: #BBB;
-    width: 100%;
+    width: 260px;
     z-index: 1;
 }
 
@@ -62,6 +64,10 @@
     display: block;
 }
 
+.subnav-content-cat {
+    width: 260px;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -77,10 +83,4 @@ section::after {
     content: "";
     display: table;
     clear: both;
-}
-
-.small_list {
-    padding-left: 2%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
 }

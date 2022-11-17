@@ -9,6 +9,7 @@
 	<meta name="description"
 		content="Engineer student at Télécom Physique Strasbourg Engineering School specialized in Datascience and AI">
 	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<link rel="stylesheet" href="css/sidenav.css" type="text/css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
 			<button class="subnavbtn"><a href="#">Home</a></button>
 		</div>
 		<div class="subnav">
-			<button class="subnavbtn"><a href="#presentation">Presentation</a></button>
+			<button class="subnavbtn"><a href="#news">News</a></button>
 		</div>
 		<div class="subnav">
 			<button class="subnavbtn"><a href="#education">Education</a></button>
@@ -55,44 +56,30 @@
 	</div>
 
 	<main>
-		<section id="news">
+		<div class="presentation-container">
+			<section id="presentation" class="presentation">
+				<figure class="presentation-pic-figure">
+					<img src="ressource/img/icon.jpg" alt="A picture of me" title="A picture of me" width="1100"
+						height="1100">
+					<figcaption class="offscreen">Fabien ALLEMAND</figcaption>
+				</figure>
+				<h1 class="h1">
+					<span class="nowrap">Hello 👋</span>
+					<span class="nowrap">I am Fabien</span>
+				</h1>
+			</section>
+		</div>
+
+		<section id="news" class="news">
 			<h1>News</h1>
-
-			<img src="ressource/img/creating_my_website.png" alt="Creating my personal website."
-				title="When I'm trying to create my own personal website from scratch." width="720" height="405">
-			<p>I'm currently trying to create my own personal website from scratch. This process involve learning HTML
-				and CSS in a limited amount of time.</p>
-			<!-- <div class="iframe-container">
-				<iframe src="https://fr.linkedin.com/in/fabien-allemand-309b93208#posts" title="" width="90%" height="vh"></iframe>
-			</div> -->
-
-		</section>
-
-		<section id="presentation">
-			<h1>Presentation</h1>
-			<table>
-				<tr>
-					<th>
-						<img src="ressource/img/me.jpg" alt="A picture of me." title="A picture of me in Spain."
-							width="291.5" height="385.5">
-					</th>
-					<th>
-						<p class="presentation">
-							A Master’s student at Télécom Physique Strasbourg Engineering School, specialized in Data
-							Science
-							and
-							Artificial Intelligence.
-						</p>
-						<p class="presentation">
-							I really enjoy programming whether it's for science, AI, game development or web
-							development.</p>
-						<p class="presentation">As a DIY enthusiast I'm trying to learn PCB design and 3D conception in
-							order
-							to create my own PCBs and 3D-print useful things.
-						</p>
-					</th>
-				</tr>
-			</table>
+			<p>
+			<figure class="news pic figure">
+				<img src="ressource/img/creating_my_website.png" alt="Creating my personal website."
+					title="Creating my personal website." width="960" height="540">
+			</figure>
+			I'm currently trying to create my own personal website from scratch. This process involve learning HTML
+			and CSS in a limited amount of time.
+			</p>
 		</section>
 
 		<section id="education">
@@ -360,19 +347,48 @@
 
 		<section id="contact">
 			<h1>Contact</h1>
-			<p class="center">
+			<!-- <p class="center">
 				<a href="mailto:fabien.allemand@etu.unistra.fr" target="_blank">
-					<img src="ressource/img/email.png" alt="Linked-In" style="width:96px;height:96px;">
+					<figure class="contact-pic-figure">
+						<img src="ressource/img/email.png" alt="Linked-In" width="96" height="96">
+					</figure>
 				</a>
 				<a href="https://www.linkedin.com/in/fabien-allemand-309b93208/" target="_blank">
-					<img src="ressource/img/linked_in.png" alt="Linked-In" style="width:96px;height:96px;">
+					<figure class="contact-pic-figure">
+						<img src="ressource/img/linked_in.png" alt="Linked-In" width="96" height="96">
+					</figure>
 				</a>
 				<a href="https://github.com/FABallemand" target="_blank">
-					<img src="ressource/img/github.png" alt="GitHub" style="width:96px;height:96px;">
+					<figure class="contact-pic-figure">
+						<img src="ressource/img/github.png" alt="GitHub" width="96" height="96">
+					</figure>
 				</a>
 				<a href="Fabien#3227" target="_blank">
-					<img src="ressource/img/discord.png" alt="Discord" style="width:96px;height:96px;">
+					<figure class="contact-pic-figure">
+						<img src="ressource/img/discord.png" alt="Discord" width="96" height="96">
+					</figure>
 				</a>
+				</figure>
+				<br>
+				Feel free to contact me 😁
+			</p> -->
+			<p class="center">
+				<a href="mailto:fabien.allemand@etu.unistra.fr" target="_blank">
+					<img src="ressource/img/email.png" alt="Linked-In" width="96" height="96"
+						class="contact-pic-figure">
+				</a>
+				<a href="https://www.linkedin.com/in/fabien-allemand-309b93208/" target="_blank">
+					<img src="ressource/img/linked_in.png" alt="Linked-In" width="96" height="96"
+						class="contact-pic-figure">
+				</a>
+				<a href="https://github.com/FABallemand" target="_blank">
+					<img src="ressource/img/github.png" alt="GitHub" width="96" height="96" class="contact-pic-figure">
+				</a>
+				<a href="Fabien#3227" target="_blank">
+					<img src="ressource/img/discord.png" alt="Discord" width="96" height="96"
+						class="contact-pic-figure">
+				</a>
+				</figure>
 				<br>
 				Feel free to contact me 😁
 			</p>
