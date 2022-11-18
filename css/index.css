@@ -19,18 +19,34 @@ html {
 
 body {
     background-color: #BBB;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+main,
+footer {
+    padding-left: 260px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+}
+
+header,
+footer {
+    position: sticky;
 }
 
 header {
-    margin-left: 260px;
+    top: 0;
 }
 
 main {
-    margin-left: 260px;
+    flex-grow: 1;
 }
 
 footer {
-    margin-left: 260px;
+    bottom: 0;
 }
 
 h1 {
@@ -80,6 +96,10 @@ address:before {
 
 /* End All Page */
 /* Utility Classes */
+
+.center {
+    text-align: center;
+}
 
 .small_list {
     padding-left: 2%;
@@ -165,22 +185,129 @@ address:before {
 /* End news */
 /* Contact */
 
-/* .contact-pic-figure {
-    width: 15%;
+.contact-container {
+    background-color: #BBB;
+    background-image: url('../ressource/img/trips/betesa_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.contact-pic-figure img {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    min-width: 100px;
-} */
+.contact {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
 
-.contact-pic-img {
+    /* background-color: #BBB;
+    background-image: url('../ressource/img/trips/betesa_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    background-color: hsla(0, 0%, 0%, 0.20);
+}
+
+.h1 {
+    display: block;
+    font-size: 200%;
+
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000;
+
+    /* background-color: hsla(0, 0%, 0%, 0.40);
+    padding: 0.25rem;
+    border-radius: 10px; */
+}
+
+.contact-pic-figure {
     display: inline;
+    width: 10%;
+}
+
+.contact-pic-figure a img {
     width: 100%;
     height: auto;
-    min-width: 100px;
+    min-width: 64px;
 }
 
 /* End contact */
+
+/* || X-SMALL */
+@media screen and (max-width: 576px) {
+    .sidenav {
+        display: none;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 0px;
+    }
+}
+
+/* || SMALL */
+@media screen and (min-width: 576px) {
+    .sidenav {
+        display: none;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 0px;
+    }
+}
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+    .sidenav {
+        display: block;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 260px;
+    }
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+    .sidenav {
+        display: block;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 260px;
+    }
+}
+
+/* || X-LARGE */
+@media screen and (min-width: 1200px) {
+    .sidenav {
+        display: block;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 260px;
+    }
+}
+
+/* || XX-LARGE */
+@media screen and (min-width: 1400px) {
+    .sidenav {
+        display: block;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 260px;
+    }
+}
