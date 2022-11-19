@@ -171,6 +171,7 @@ address:before {
 
 .news-pic-figure {
     width: 100%;
+    padding-left: 10px;
 }
 
 .news-pic-figure img {
@@ -180,6 +181,13 @@ address:before {
     min-width: 100px;
     /* border: 5px double black;
     border-radius: 5%; */
+}
+
+.news p {
+    padding-left: 10px;
+    background-color: hsla(0, 0%, 0%, 0.40);
+    padding: 0.25rem;
+    border-radius: 10px;
 }
 
 /* End news */
