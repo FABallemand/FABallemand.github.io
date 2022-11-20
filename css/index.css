@@ -6,19 +6,40 @@
     box-sizing: border-box;
 }
 
-img {
-    display: block;
+/* End Reset */
+/* Variables */
+
+:root {
+    /* FONT */
+    --FF: Arial, Helvetica, sans-serif;
+    --FS: 1.2rem;
+    --FS-TITLE: 2.2rem;
+    --FS-SUBTITLE: 1.8rem;
+
+    /* COLOR */
+    --BG-COLOR: #BBB;
+    --ALT-COLOR: firebrick;
+    --LIGHT-COLOR: #F1F1F1;
+    --DARK-COLOR: #000;
+
+    /* STYLE */
+    --BORDER-RADIUS: 10px;
+    --SHADOW: 0 6px 5px -5px;
+
+    /* SIDE NAV */
+    --SIDENAV-WIDTH: 260px;
 }
 
-/* End Reset */
+/* End Variables */
 /* All Page */
 
 html {
     scroll-behavior: smooth;
+    font: var(--FS) var(--FF);
 }
 
 body {
-    background-color: #BBB;
+    background-color: var(--BG-COLOR);
     display: flex;
     flex-direction: column;
 }
@@ -32,8 +53,7 @@ footer {
     grid-template-columns: 100%;
 }
 
-header,
-footer {
+header {
     position: sticky;
 }
 
@@ -43,19 +63,16 @@ header {
 
 main {
     flex-grow: 1;
-}
-
-footer {
-    bottom: 0;
+    /* expand to the bottom of the page */
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: var(--FS-TITLE);
     padding: 0.5em;
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: var(--FS-SUBTITLE);
     padding: 0.5em;
 }
 
@@ -67,17 +84,14 @@ p {
     padding-left: 5%;
 }
 
-a {
-    color: aliceblue;
-}
-
-a:visited {
-    color: lightgray;
+a:any-link {
+    color: var(--ALT-COLOR);
 }
 
 a:hover,
+a:focus,
 a:active {
-    color: #eee;
+    filter: brightness(120%);
 }
 
 ul {
@@ -92,6 +106,10 @@ date:before {
 
 address:before {
     content: "📍 ";
+}
+
+img {
+    display: block;
 }
 
 /* End All Page */
@@ -117,10 +135,106 @@ address:before {
 }
 
 /* End Utility Classes */
+/* Sidenav */
+
+.sidenav {
+    height: 100%;
+    width: var(--SIDENAV-WIDTH);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    width: var(--SIDENAV-WIDTH);
+    text-align: left;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 2px 15px 2px 15px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.subnavbtn a {
+    white-space: nowrap;
+}
+
+.sidenav a:hover,
+.subnav:hover .subnavbtn {
+    color: var(--LIGHT-COLOR);
+    background-color: var(--ALT-COLOR);
+    filter: brightness(100%);
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #BBB;
+    width: var(--SIDENAV-WIDTH);
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: var(--LIGHT-COLOR);
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: var(--LIGHT-COLOR);
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.subnav-content-cat {
+    width: var(--SIDENAV-WIDTH);
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* End Sidenav */
 /* Presentation */
 
 .presentation-container {
-    background-color: #BBB;
+    background-color: var(--BG-COLOR);
     background-image: url('../ressource/img/trips/betesa_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,12 +249,14 @@ address:before {
     align-items: center;
     gap: 40px;
 
-    /* background-color: #BBB;
+    /* background-color: var(--BG-COLOR);
     background-image: url('../ressource/img/trips/betesa_1.jpg');
     background-repeat: no-repeat;
     background-size: cover; */
 
     background-color: hsla(0, 0%, 0%, 0.20);
+
+    /* box-shadow: var(--SHADOW); */
 }
 
 .h1 {
@@ -169,9 +285,18 @@ address:before {
 /* End presentation */
 /* News */
 
+.news {
+    border: 2px solid var(--DARK-COLOR);
+    border-radius: var(--BORDER-RADIUS);
+    margin: 10px 5px;
+    padding: 5px;
+}
+
 .news-pic-figure {
     width: 100%;
     padding-left: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .news-pic-figure img {
@@ -179,22 +304,20 @@ address:before {
     width: 80%;
     height: auto;
     min-width: 100px;
-    /* border: 5px double black;
-    border-radius: 5%; */
 }
 
 .news p {
     padding-left: 10px;
     background-color: hsla(0, 0%, 0%, 0.40);
     padding: 0.25rem;
-    border-radius: 10px;
+    border-radius: var(--BORDER-RADIUS);
 }
 
 /* End news */
 /* Contact */
 
 .contact-container {
-    background-color: #BBB;
+    background-color: var(--BG-COLOR);
     background-image: url('../ressource/img/trips/betesa_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,7 +332,7 @@ address:before {
     align-items: center;
     gap: 40px;
 
-    /* background-color: #BBB;
+    /* background-color: var(--BG-COLOR);
     background-image: url('../ressource/img/trips/betesa_1.jpg');
     background-repeat: no-repeat;
     background-size: cover; */
