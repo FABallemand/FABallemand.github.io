@@ -1,6 +1,8 @@
+/* Sidenav */
+
 .sidenav {
     height: 100%;
-    width: 260px;
+    width: var(--SIDENAV-WIDTH);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -23,7 +25,7 @@
 }
 
 .subnav .subnavbtn {
-    width: 260px;
+    width: var(--SIDENAV-WIDTH);
     text-align: left;
     font-size: 16px;
     border: none;
@@ -35,28 +37,34 @@
     margin: 0;
 }
 
+.subnavbtn a {
+    white-space: nowrap;
+}
+
 .sidenav a:hover,
 .subnav:hover .subnavbtn {
-    color: #f1f1f1;
-    background-color: #F00;
+    color: var(--LIGHT-COLOR);
+    background-color: var(--ALT-COLOR);
+    filter: brightness(100%);
 }
+
 .subnav-content {
     display: none;
     position: absolute;
     left: 0;
     background-color: #BBB;
-    width: 260px;
+    width: var(--SIDENAV-WIDTH);
     z-index: 1;
 }
 
 .subnav-content a {
     float: left;
-    color: white;
+    color: var(--LIGHT-COLOR);
     text-decoration: none;
 }
 
 .subnav-content a:hover {
-    background-color: #eee;
+    background-color: var(--LIGHT-COLOR);
     color: black;
 }
 
@@ -65,7 +73,7 @@
 }
 
 .subnav-content-cat {
-    width: 260px;
+    width: var(--SIDENAV-WIDTH);
 }
 
 @media screen and (max-height: 450px) {
@@ -83,4 +91,84 @@ section::after {
     content: "";
     display: table;
     clear: both;
+}
+
+/* End Sidenav */
+
+/* || X-SMALL */
+@media screen and (max-width: 576px) {
+    .sidenav {
+        display: none;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 0px;
+    }
+}
+
+/* || SMALL */
+@media screen and (min-width: 576px) {
+    .sidenav {
+        display: none;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 0px;
+    }
+}
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+    .sidenav {
+        display: block;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 260px;
+    }
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+    .sidenav {
+        display: block;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 260px;
+    }
+}
+
+/* || X-LARGE */
+@media screen and (min-width: 1200px) {
+    .sidenav {
+        display: block;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 260px;
+    }
+}
+
+/* || XX-LARGE */
+@media screen and (min-width: 1400px) {
+    .sidenav {
+        display: block;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 260px;
+    }
 }

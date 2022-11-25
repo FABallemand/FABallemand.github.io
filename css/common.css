@@ -1,0 +1,193 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* End Reset */
+/* Variables */
+
+:root {
+    /* FONT */
+    --FF: Arial, Helvetica, sans-serif;
+    --FS: 1.2rem;
+    --FS-TITLE: 2.2rem;
+    --FS-SUBTITLE: 1.8rem;
+
+    /* COLOR */
+    --BG-COLOR: #BBB;
+    --ALT-COLOR: firebrick;
+    --LIGHT-COLOR: #F1F1F1;
+    --DARK-COLOR: #000;
+
+    /* STYLE */
+    --BORDER-RADIUS: 10px;
+    --SHADOW: 0 6px 5px -5px;
+
+    /* SIDE NAV */
+    --SIDENAV-WIDTH: 260px;
+}
+
+/* End Variables */
+/* All Page */
+
+html {
+    scroll-behavior: smooth;
+    font: var(--FS) var(--FF);
+}
+
+body {
+    background-color: var(--BG-COLOR);
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+main,
+footer {
+    padding-left: 260px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+}
+
+header {
+    position: sticky;
+}
+
+header {
+    top: 0;
+}
+
+main {
+    flex-grow: 1;
+    /* expand to the bottom of the page */
+}
+
+h1 {
+    font-size: var(--FS-TITLE);
+    padding: 0.5em;
+}
+
+h2 {
+    font-size: var(--FS-SUBTITLE);
+    padding: 0.5em;
+}
+
+h3 {
+    font-size: 1.1rem;
+    padding-left: 1.1em;
+}
+
+span {
+    font-weight: bold;
+}
+
+p {
+    padding-left: 5%;
+}
+
+a:any-link {
+    color: var(--ALT-COLOR);
+}
+
+a:hover,
+a:focus,
+a:active {
+    filter: brightness(120%);
+}
+
+ul {
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+date:before {
+    content: "🗓 ";
+}
+
+address:before {
+    content: "📍 ";
+}
+
+img {
+    display: block;
+}
+
+/* End All Page */
+/* Utility Classes */
+
+.center {
+    text-align: center;
+}
+
+.small_list {
+    padding-left: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* End Utility Classes */
+/* Header */
+
+.header-container {
+    background-color: var(--BG-COLOR);
+    background-image: url('../ressource/img/trips/betesa_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+
+    /* background-color: var(--BG-COLOR);
+    background-image: url('../ressource/img/trips/betesa_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    background-color: hsla(0, 0%, 0%, 0.20);
+
+    /* box-shadow: var(--SHADOW); */
+}
+
+.h1 {
+    font-size: 200%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000;
+
+    /* background-color: hsla(0, 0%, 0%, 0.40);
+    padding: 0.25rem;
+    border-radius: 10px; */
+}
+
+.header-pic-figure {
+    width: 35%;
+}
+
+.header-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 250px;
+    border: 5px double black;
+    border-radius: 50%;
+}
+
+/* End header */
