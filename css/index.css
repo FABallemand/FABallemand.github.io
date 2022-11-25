@@ -142,4 +142,10 @@
     min-width: 64px;
 }
 
+.contact-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 64px;
+}
+
 /* End contact */
