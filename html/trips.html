@@ -7,130 +7,133 @@
     <meta name="author" content="Fabien Allemand">
     <meta name="description" content="Projects">
     <link rel="icon" href="ressource/icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/sidenav.css">
 </head>
 
 <body>
     <header>
-        <h1>
-            Trips 🛫
-        </h1>
+        <div class="header-container">
+            <section id="header" class="header">
+                <h1 class="h1">
+                    <span class="nowrap">Trips 🛫</span>
+                </h1>
+            </section>
+        </div>
     </header>
+
+    <div class="sidenav">
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../index.html">Home</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../index.html#news">News</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../index.html#education">Education</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../index.html#work_exp">Internship</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="projects.html#">Projects</a></button>
+            <div class="subnav-content">
+                <a href="projects.html#programming" class="subnav-content-cat">Programming 🖥</a>
+                <a href="projects.html#3D_printing" class="subnav-content-cat">3D Printing 🔩</a>
+                <a href="projects.html#electronics" class="subnav-content-cat">Electronics 🔋</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="#">Others</a></button>
+            <div class="subnav-content">
+                <a href="readings.html" class="subnav-content-cat">What I read 📖</a>
+                <a href="sport.html" class="subnav-content-cat">Sport 👟</a>
+                <a href="#" class="subnav-content-cat">Trips 🛫</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../index.html#contact">Contact</a></button>
+        </div>
+    </div>
 
     <!-- 🇨🇵 -->
 
     <main>
-        <section id="2022_swiss">
-            <h2>
-                A week-end in Lausanne 🇨🇭
-            </h2>
+        <section id="2022_swiss" class="bordered">
+            <h1>A week-end in Lausanne 🇨🇭</h1>
             <date>November 2022</date>
             <address>Lausanne, Swiss</address>
-            <table>
-                <tr>
-                    <th>
-                        <img src="../ressource/img/trips/lausanne_1.jpg"
-                            alt="Visiting Lausanne by bike is awesome...except when going uphill"
-                            title="Visiting Lausanne by bike is awesome...except when going uphill" width="621"
-                            height="466">
-                    </th>
-                    <th>
-                        <p>
-                            Visiting Lausanne by bike.
-                        </p>
-                    </th>
-                </tr>
-            </table>
+            <br>
+            <figure class="bordered-pic-figure">
+                <img src="../ressource/img/trips/lausanne_1.jpg"
+                    alt="Visiting Lausanne by bike is awesome...except when going uphill"
+                    title="Visiting Lausanne by bike is awesome...except when going uphill" width="621" height="466">
+                <!-- <img src="ressource/img/creating_my_website.png" alt="Creating my personal website."
+					title="Creating my personal website." width="960" height="540"> -->
+            </figure>
+            <br>
+            <p>
+                Visiting Lausanne by bike.
+            </p>
         </section>
 
-        <section id="2022_spain">
-            <h2>
-                Primera vez en España 🇪🇦
-            </h2>
+        <section id="2022_spain" class="bordered">
+            <h1>Primera vez en España 🇪🇦</h1>
             <date>Verano 2022</date>
             <address>Betesa, España</address>
             <address>Rosas, España</address>
             <address>Pals, España</address>
-            <table>
-                <tr>
-                    <th>
-                        <img src="../ressource/img/trips/betesa_1.jpg"
-                            alt=""
-                            title="" width="864"
-                            height="486">
-                    </th>
-                    <th>
-                        <p>
-                            Impresionante vista durante una caminata con mis amigos.
-                        </p>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="../ressource/img/trips/rosas_1.jpg"
-                            alt=""
-                            title="" width="621"
-                            height="466">
-                    </th>
-                    <th>
-                        <p>
-                            
-                        </p>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="../ressource/img/trips/pals_1.jpg"
-                            alt=""
-                            title="" width="756"
-                            height="567">
-                    </th>
-                    <th>
-                        <p>
-                            Pequeña caminata con mi amigo Christophe para explorar el castillo de Montgris.
-                        </p>
-                    </th>
-                </tr>
-            </table>
+            <br>
+            <figure class="bordered-pic-figure">
+                <img src="../ressource/img/trips/betesa_1.jpg" alt="" title="" width="864" height="486">
+            </figure>
+            <br>
+            <p>
+                Impresionante vista durante una caminata con amigos.
+            </p>
+            <br>
+            <figure class="bordered-pic-figure">
+                <img src="../ressource/img/trips/rosas_1.jpg" alt="" title="" width="864" height="486">
+            </figure>
+            <br>
+            <p>
+
+            </p>
+            <br>
+            <figure class="bordered-pic-figure">
+                <img src="../ressource/img/trips/pals_1.jpg" alt="" title="" width="756" height="567">
+            </figure>
+            <br>
+            <p>
+                Pequeña caminata con mi amigo Christophe para explorar el castillo de Montgris.
+            </p>
+            <br>
         </section>
 
-        <section id="2022_budapest">
-            <h2>
-                One week in Budapest 🇭🇺
-            </h2>
+        <section id="2022_budapest" class="bordered">
+            <h1>One week in Budapest 🇭🇺</h1>
             <date>February 2022</date>
             <address>Budapest, Hungary</address>
-            <!-- <img src="../ressource/img/trips/budapest_1.jpg"
-                alt="Enjoying a beautiful view on Pest from the Fisherman's Bastion"
-                title="Enjoying a beautiful view on Pest from the Fisherman's Bastion" width="384" height="512" class="left">
+            <br>
+            <figure class="bordered-pic-figure">
+                <img src="../ressource/img/trips/budapest_1.jpg"
+                    alt="Enjoying a beautiful view on Pest from the Fisherman's Bastion"
+                    title="Enjoying a beautiful view on Pest from the Fisherman's Bastion" width="384" height="512">
+            </figure>
+            <br>
             <p>
-            </p> -->
-            <table>
-                <tr>
-                    <th>
-                        <img src="../ressource/img/trips/budapest_1.jpg"
-                            alt="Enjoying a beautiful view on Pest from the Fisherman's Bastion"
-                            title="Enjoying a beautiful view on Pest from the Fisherman's Bastion" width="384"
-                            height="512">
-                    </th>
-                    <th>
-                        <p>
-                            Got on an airliner for the first time for a one week trip in Budapest.
-                        </p>
-                    </th>
-                </tr>
-            </table>
+                Got on an airliner for the first time for a one week trip in Budapest.
+            </p>
         </section>
 
-        <section id="2019_uk">
-            <h2>
-                Crossing the English Channel 🇬🇧
-            </h2>
+        <section id="2019_uk" class="bordered">
+            <h1>Crossing the English Channel 🇬🇧</h1>
             <date>2016</date>
             <address>Stratford, England</address>
+            <br>
             <p>
-                One week in Stratford living in a host family. Too bad I didn't know how to speak english at that time... 🙁
+                One week in Stratford living in a host family. Too bad I didn't know how to speak english at that
+                time... 🙁
             </p>
         </section>
     </main>

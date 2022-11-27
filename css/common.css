@@ -191,3 +191,34 @@ img {
 }
 
 /* End header */
+/* Section with border */
+
+.bordered {
+    border: 2px solid var(--DARK-COLOR);
+    border-radius: var(--BORDER-RADIUS);
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+.bordered-pic-figure {
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.bordered-pic-figure img {
+    display: block;
+    width: clamp(100px, 80%, 960px);
+    height: auto;
+    min-width: 100px;
+}
+
+.bordered p {
+    padding-left: 10px;
+    background-color: hsla(0, 0%, 0%, 0.40);
+    padding: 0.25rem;
+    border-radius: var(--BORDER-RADIUS);
+}
+
+/* End section with border */
