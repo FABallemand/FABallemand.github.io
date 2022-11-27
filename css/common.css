@@ -39,6 +39,7 @@ html {
 }
 
 body {
+    height: 100vh;
     background-color: var(--BG-COLOR);
     display: flex;
     flex-direction: column;
@@ -119,6 +120,10 @@ img {
 
 /* End All Page */
 /* Utility Classes */
+
+.hidden{
+    display: none;
+}
 
 .center {
     text-align: center;
