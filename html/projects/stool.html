@@ -13,55 +13,56 @@
 
 <body>
     <header>
-        <h1>
-            Stool Repair
-        </h1>
-        <date>October 2022</date>
-        <address>Strasbourg, France</address>
+        <div class="header-container">
+            <section id="header" class="header">
+                <h1 class="h1">
+                    <span class="nowrap">Stool Repair</span>
+                </h1>
+                <date>October 2022</date>
+                <address>Strasbourg, France</address>
+            </section>
+        </div>
     </header>
 
     <div class="sidenav">
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../../index.html">Home</a></button>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../../index.html#news">News</a></button>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../../index.html#education">Education</a></button>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../../index.html#work_exp">Internship</a></button>
-		</div>
-		<!-- <div class="subnav">
-			<button class="subnavbtn"><a href="html/equipement.html">Equipement</a></button>
-		</div> -->
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../projects.html">Projects</a></button>
-			<div class="subnav-content">
-				<a href="../projects.html#programming" class="subnav-content-cat">Programming 🖥</a>
-				<a href="../projects.html#3D_printing" class="subnav-content-cat">3D Printing 🔩</a>
-				<a href="../projects.html#electronics" class="subnav-content-cat">Electronics 🔋</a>
-			</div>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="#">Others</a></button>
-			<div class="subnav-content">
-				<a href="../readings.html" class="subnav-content-cat">What I read 📖</a>
-				<a href="../sport.html" class="subnav-content-cat">Sport 👟</a>
-				<a href="../trips.html" class="subnav-content-cat">Trips 🛫</a>
-			</div>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../../index.html#contact">Contact</a></button>
-		</div>
-	</div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../../index.html">Home</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../../index.html#news">News</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../../index.html#education">Education</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../../index.html#work_exp">Internship</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../projects.html">Projects</a></button>
+            <div class="subnav-content">
+                <a href="../projects.html#programming" class="subnav-content-cat">Programming 🖥</a>
+                <a href="../projects.html#3D_printing" class="subnav-content-cat">3D Printing 🔩</a>
+                <a href="../projects.html#electronics" class="subnav-content-cat">Electronics 🔋</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="#">Others</a></button>
+            <div class="subnav-content">
+                <a href="../readings.html" class="subnav-content-cat">What I read 📖</a>
+                <a href="../sport.html" class="subnav-content-cat">Sport 👟</a>
+                <a href="../trips.html" class="subnav-content-cat">Trips 🛫</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../../index.html#contact">Contact</a></button>
+        </div>
+    </div>
 
-    <main>
+    <main class="content">
         <section>
-                <h2>
-                    A Broken Stool
-                </h2>
+            <h2>
+                A Broken Stool
+            </h2>
             <p>
                 My parents finally bought some new stools that are actually able to support my weight!! 😅 With a metal
                 structure and a dark wooden-like top they look great... but there is an issue. One of them came with a
@@ -74,25 +75,29 @@
             </p>
         </section>
         <section>
-                <h2>
-                    3D Scan
-                </h2>
+            <h2>
+                3D Scan
+            </h2>
             <p>
                 Knowing there was a 3D Scanner that I had never used at my school's FabLab, the initial goal was to 3D
                 Scan
                 one of the other feet and 3D-print it.
             </p>
-            <img src="../../ressource/img/projects/stool/5.jpg" alt="EinScan-S" title="EinScan-S" width="480"
-                height="270">
+            <figure class="content-pic-figure">
+                <img src="../../ressource/img/projects/stool/5.jpg" alt="EinScan-S" title="EinScan-S" width="480"
+                    height="270">
+            </figure>
             <p>
                 The scanner is an EinScan-S and is made of two parts: the camera/lightning module and the rotating
                 plate. It works
                 by taking multiple pictures of the object under different position and
                 lightning conditions.
             </p>
-            <iframe width="480" height="270"
-                src="https://www.youtube.com/watch?v=SaprXpPyIBw&list=PLsWB3eUdhgEsBo4EwQv8pe8QFDXdSjVxI&index=8&ab_channel=3DTARGETautoplay=0&mute=1">
-            </iframe>
+            <figure class="content-pic-figure">
+                <iframe width="480" height="270"
+                    src="https://www.youtube.com/watch?v=SaprXpPyIBw&list=PLsWB3eUdhgEsBo4EwQv8pe8QFDXdSjVxI&index=8&ab_channel=3DTARGETautoplay=0&mute=1">
+                </iframe>
+            </figure>
             <p>
                 With some trial and error (and a little bit of assistance from a FabLab Manager) I managed to make the
                 3D
@@ -111,23 +116,25 @@
             </p>
         </section>
         <section>
-                <h2>
-                    3D Design
-                </h2>
+            <h2>
+                3D Design
+            </h2>
             <p>
                 Back to the drawing board! I fired up my trusty Fusion 360 and started designing a proper model. And
                 within
                 a few clicks I obtained this:
             </p>
-            <image></image>
+            <figure class="content-pic-figure">
+                <image></image>
+            </figure>
             <p>
                 Much better! Let's print it!
             </p>
         </section>
         <section>
-                <h2>
-                    3D Print
-                </h2>
+            <h2>
+                3D Print
+            </h2>
             <p>
                 As the feet of the stool need to be able to sustain a lot of stress (due to the weight they will have to
                 support or the shocks when the stool is moved around) I had to avoid fragile materials. Fortunately, I
@@ -141,24 +148,18 @@
                     target="_blank">Zortrax
                     M22 Plus</a> I obtained four feet that look similar to the original one.
             </p>
-            <table>
-                <tr>
-                    <th>
-                        <img src="../../ressource/img/projects/stool/2.jpg" alt="Picture of the 3D-printed result"
-                            title="Result of the print" width="270" height="480">
-                    </th>
-                    <th>
-                        <img src="../../ressource/img/projects/stool/3.jpg" alt="Picture of the 3D-printed result"
-                            title="Result of the print" width="270" height="480">
-                    </th>
-                </tr>
-                <tr>
-                    <th colspan="2">
-                        <img src="../../ressource/img/projects/stool/4.jpg" alt="Picture of the 3D-printed result"
-                            title="Result of the print" width="480" height="270">
-                    </th>
-                </tr>
-            </table>
+            <figure class="content-pic-figure-v">
+                <img src="../../ressource/img/projects/stool/2.jpg" alt="Picture of the 3D-printed result"
+                    title="Result of the print" width="270" height="480">
+            </figure>
+            <figure class="content-pic-figure-v">
+                <img src="../../ressource/img/projects/stool/3.jpg" alt="Picture of the 3D-printed result"
+                    title="Result of the print" width="270" height="480">
+            </figure>
+            <figure class="content-pic-figure">
+                <img src="../../ressource/img/projects/stool/4.jpg" alt="Picture of the 3D-printed result"
+                    title="Result of the print" width="480" height="270">
+            </figure>
             <p>
                 But do they fit??
                 <br>

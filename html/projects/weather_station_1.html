@@ -13,68 +13,70 @@
 
 <body>
     <header>
-        <h1>
-            Weather Station
-        </h1>
-        <date>2021-2022</date>
-        <address>Strasbourg, France</address>
-
-        <p><a href="https://github.com/FABallemand/weather_station_1" target="_blank">GitHub repository</a></p>
+        <div class="header-container">
+            <section id="header" class="header">
+                <h1 class="h1">
+                    <span class="nowrap">Weather Station</span>
+                </h1>
+                <date>2021-2022</date>
+                <address>Strasbourg, France</address>
+                <a href="https://github.com/FABallemand/weather_station_1" target="_blank">GitHub repository</a>
+            </section>
+        </div>
     </header>
 
     <div class="sidenav">
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../../index.html">Home</a></button>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../../index.html#news">News</a></button>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../../index.html#education">Education</a></button>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../../index.html#work_exp">Internship</a></button>
-		</div>
-		<!-- <div class="subnav">
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../../index.html">Home</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../../index.html#news">News</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../../index.html#education">Education</a></button>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../../index.html#work_exp">Internship</a></button>
+        </div>
+        <!-- <div class="subnav">
 			<button class="subnavbtn"><a href="html/equipement.html">Equipement</a></button>
 		</div> -->
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../projects.html">Projects</a></button>
-			<div class="subnav-content">
-				<a href="../projects.html#programming" class="subnav-content-cat">Programming 🖥</a>
-				<a href="../projects.html#3D_printing" class="subnav-content-cat">3D Printing 🔩</a>
-				<a href="../projects.html#electronics" class="subnav-content-cat">Electronics 🔋</a>
-			</div>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="#">Others</a></button>
-			<div class="subnav-content">
-				<a href="../readings.html" class="subnav-content-cat">What I read 📖</a>
-				<a href="../sport.html" class="subnav-content-cat">Sport 👟</a>
-				<a href="../trips.html" class="subnav-content-cat">Trips 🛫</a>
-			</div>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../../index.html#contact">Contact</a></button>
-		</div>
-	</div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../projects.html">Projects</a></button>
+            <div class="subnav-content">
+                <a href="../projects.html#programming" class="subnav-content-cat">Programming 🖥</a>
+                <a href="../projects.html#3D_printing" class="subnav-content-cat">3D Printing 🔩</a>
+                <a href="../projects.html#electronics" class="subnav-content-cat">Electronics 🔋</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="#">Others</a></button>
+            <div class="subnav-content">
+                <a href="../readings.html" class="subnav-content-cat">What I read 📖</a>
+                <a href="../sport.html" class="subnav-content-cat">Sport 👟</a>
+                <a href="../trips.html" class="subnav-content-cat">Trips 🛫</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><a href="../../index.html#contact">Contact</a></button>
+        </div>
+    </div>
 
-    <main>
+    <main class="content">
         <section>
             <h2>Living in Strasbourg</h2>
             <p>
                 I used to live in the south of France only one hour away from the closest beach where you can expect to
-                enjoy the warmth of the sun even in the middle of winter. Then I had to move to
-                Strasbourg...
+                enjoy the warmth of the sun even in the middle of winter. Then I moved to Strasbourg...
             </p>
             <p>
                 Strasbourg is a really nice city with a very interesting background, a unique local culture and a lot of
-                delicious meals. The only issue being the weather which is notably cold and humid with a noticeable lack
+                delicious meals. The only issue being the weather which is very cold and humid with a noticeable lack
                 of sun.
             </p>
             <p>
-                One morning while walking in the fog to my school I felt the unpleasant sensation of condensation on my
-                moustache and I wondered how cold and humid it was. I immediately wanted to build some sort of weather
+                One morning while walking to school in the fog I felt the unpleasant sensation of condensation on my
+                moustache and I wondered how cold and humid it was. This is when I first thought about building some sort of weather
                 station to monitor temperature and humidity!
             </p>
         </section>
@@ -84,8 +86,8 @@
             </h2>
             <p>
                 I thought it was a great opportunity to finally use some <a href="https://www.arduino.cc/">Arduinos</a>.
-                <br>
                 After some online research I bought a couple of Arduino boards and a bunch of modules to play with:
+            </p>
             <ul>
                 <li>
                     AHT-10 Temperature and humidity sensor
@@ -100,11 +102,14 @@
                     16x2 LCD Display
                 </li>
             </ul>
-            The initial goal was to make a little device that can display the current date and time as well as the
-            temperature and humidity inside and outside. I grabbed a breadboard and started prototyping!
+            <p>
+                The initial goal was to make a little device that can display the current date and time as well as the
+                temperature and humidity inside and outside. I grabbed a breadboard and started prototyping!
             </p>
-            <img src="../../ressource/img/projects/weather_station_1/1.jpg" alt="Picture of the breadboard."
-                title="Final prototype." width="480" height="270">
+            <figure class="content-pic-figure">
+                <img src="../../ressource/img/projects/weather_station_1/1.jpg" alt="Picture of the breadboard."
+                    title="Final prototype." width="480" height="270">
+            </figure>
             <p>
                 After a healthy amount of trial-and-error and debugging I obtained this little plate of spaghetti. But
                 it worked!
@@ -141,20 +146,14 @@
                 After a bit of (bad) soldering work and repair (because I burned a trace while unsoldering the 16 pin
                 LCD) I obtained this beautiful weather station.
             </p>
-
-            <table>
-                <tr>
-                    <th>
-                        <img src="../../ressource/img/projects/weather_station_1/2.jpg"
-                            alt="Weather station Arduino side." title="Weather station Arduino side." width="480"
-                            height="270">
-                    </th>
-                    <th>
-                        <img src="../../ressource/img/projects/weather_station_1/3.jpg" alt="Weather station LCD side."
-                            title="Weather station LCD side." width="480" height="270">
-                    </th>
-                </tr>
-            </table>
+            <figure class="content-pic-figure">
+                <img src="../../ressource/img/projects/weather_station_1/2.jpg" alt="Weather station Arduino side."
+                    title="Weather station Arduino side." width="480" height="270">
+            </figure>
+            <figure class="content-pic-figure">
+                <img src="../../ressource/img/projects/weather_station_1/3.jpg" alt="Weather station LCD side."
+                    title="Weather station LCD side." width="480" height="270">
+            </figure>
         </section>
         <section>
             <h2>
@@ -169,8 +168,10 @@
                 the walls are a little to flexible and looking at it closely you will notice that the hole for the LDR
                 is not where it should be... oups 🤭
             </p>
-            <img src="../../ressource/img/projects/weather_station_1/4.jpg" alt="Weather station LCD side."
-                title="Weather station LCD side." width="270" height="480">
+            <figure class="content-pic-figure-v">
+                <img src="../../ressource/img/projects/weather_station_1/4.jpg" alt="Weather station LCD side."
+                    title="Weather station LCD side." width="270" height="480">
+            </figure>
             <!-- <video width="480" height="270" controls muted>
                 <source src="../../ressource/img/projects/weather_station_1/3D_print_1.mp4" type="video/mp4">
             </video> -->

@@ -15,6 +15,7 @@
     --FS: 1.2rem;
     --FS-TITLE: 2.2rem;
     --FS-SUBTITLE: 1.8rem;
+    --FS-HEADER: 90%;
 
     /* COLOR */
     --BG-COLOR: #BBB;
@@ -25,6 +26,8 @@
     /* STYLE */
     --BORDER-RADIUS: 10px;
     --SHADOW: 0 6px 5px -5px;
+    --HEADER-SHADOW: 2px 2px 5px #000;
+    --HEADER-PADDING: 0.1rem 2rem;
 
     /* SIDE NAV */
     --SIDENAV-WIDTH: 260px;
@@ -125,6 +128,11 @@ img {
     display: none;
 }
 
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
 .center {
     text-align: center;
 }
@@ -139,9 +147,8 @@ img {
     white-space: nowrap;
 }
 
-.offscreen {
-    position: absolute;
-    left: -10000px;
+.french:after {
+    content: " 🇨🇵";
 }
 
 /* End Utility Classes */
@@ -159,9 +166,10 @@ img {
     border-bottom: 2px solid black;
     padding: 20px;
     display: flex;
+    align-items: flex-start;
+    align-content: center;
     justify-content: flex-start;
-    align-items: center;
-    gap: 40px;
+    flex-direction: column;
 
     /* background-color: var(--BG-COLOR);
     background-image: url('../ressource/img/trips/betesa_1.jpg');
@@ -174,9 +182,9 @@ img {
 }
 
 .h1 {
-    font-size: 200%;
-    color: aliceblue;
-    text-shadow: 2px 2px 5px #000;
+    font-size: 250%;
+    color: var(--LIGHT-COLOR);
+    text-shadow: var(--HEADER-SHADOW);
 
     /* background-color: hsla(0, 0%, 0%, 0.40);
     padding: 0.25rem;
@@ -193,6 +201,31 @@ img {
     min-width: 250px;
     border: 5px double black;
     border-radius: 50%;
+}
+
+.header date {
+    padding: var(--HEADER-PADDING);
+    font-size: var(--FS-HEADER);
+    color: var(--LIGHT-COLOR);
+    text-shadow: var(--HEADER-SHADOW);
+}
+
+.header address {
+    padding: var(--HEADER-PADDING);
+    font-size: var(--FS-HEADER);
+    color: var(--LIGHT-COLOR);
+    text-shadow: var(--HEADER-SHADOW);
+}
+
+.header a {
+    padding: var(--HEADER-PADDING);
+    font-size: var(--FS-HEADER);
+    color: var(--LIGHT-COLOR);
+    text-shadow: var(--HEADER-SHADOW);
+}
+
+.header a:before {
+    content: "🖇 ";
 }
 
 /* End header */
@@ -227,3 +260,43 @@ img {
 }
 
 /* End section with border */
+/* Content (merge with section with border)*/
+
+.content {
+    margin: 10px 5px;
+}
+
+.content-pic-figure {
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content-pic-figure img {
+    display: block;
+    width: clamp(200px, 80%, 900px);
+    height: auto;
+}
+
+.content-pic-figure-v {
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content-pic-figure-v img {
+    display: block;
+    width: clamp(50px, 80%, 400px);
+    height: auto;
+}
+
+.content p {
+    width: clamp(400px, 90%, 1500px);
+    padding: 0.25rem 2.5rem;
+}
+
+/* End content */
