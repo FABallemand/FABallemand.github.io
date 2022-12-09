@@ -299,4 +299,9 @@ img {
     padding: 0.25rem 2.5rem;
 }
 
+.content ul {
+    width: clamp(400px, 90%, 1500px);
+    padding: 0.25rem 2.5rem;
+}
+
 /* End content */
