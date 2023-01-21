@@ -51,7 +51,7 @@ body {
 header,
 main,
 footer {
-    padding-left: 260px;
+    padding-left: var(--SIDENAV-WIDTH);
     display: grid;
     place-content: center;
     grid-template-columns: 100%;

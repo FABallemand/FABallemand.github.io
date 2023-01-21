@@ -9,6 +9,7 @@
 	<link rel="icon" href="ressource/icon.jpg" type="image/x-icon">
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/sidenav.css">
+	<link rel="stylesheet" href="../css/projects.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
 		</div>
 	</header>
 
-	<div class="sidenav">
+	<nav class="sidenav">
 		<div class="subnav">
 			<button class="subnavbtn"><a href="../index.html">Home</a></button>
 		</div>
@@ -54,78 +55,180 @@
 		<div class="subnav">
 			<button class="subnavbtn"><a href="../index.html#contact">Contact</a></button>
 		</div>
-	</div>
+	</nav>
 
 	<main>
-		<section id="programming">
-			<h2>Programming</h2>
-
-			<ul>
-				<li>
-					<a href="projects/tipe.html" title="Travail de recherche scientifique réalisé en CPGE">TIPE</a>
-				</li>
-				<li>
-					<a href="https://github.com/FABallemand/ray_tracing" title="My ray tracing attempts">Ray Tracing</a>
-				</li>
-				<li>
-					<a href="https://github.com/FABallemand/crazy_driver_1" title="2D car video game made with Pygame">Crazy Driver</a>
-				</li>
-				<li>
-					<a href="projects/dblp.html" title="Hand made C program able to parse and perform operations on a large XML database (school project)">DBLP Parsing and Analysing Tool</a>
-				</li>
-				<li>
-					<a href="projects/chess.html" title="Chess video game made with C++ (school project)">Chess Video Game</a>
-				</li>
-				<li>
-					<a href="https://github.com/FABallemand/AA_tools" title="Useful tool for industrial designer made with Python">Industrial Designer Tool</a>
-				</li>
-				<li>
-					<a href="https://github.com/FABallemand/ProjetCompilation" title="Compiler for a bash-like programming language named SoS (school project)">SoS Compiler</a>
-				</li>
-				<li>
-					<a href="https://github.com/FABallemand/crazy_driver_2" title="2D car video game made with C++/SDL">Crazy Driver 2</a>
-				</li>
-			</ul>
-		</section>
-
+		<!--
 		<section id="3D_printing">
-			<h2>3D Printing</h2>
-
-			<ul>
-				<li>
-					<a href="projects/stool.html" title="Repairing as stool using a 3D-printer">Stool Repair</a>
-				</li>
-			</ul>
-		</section>
-
 		<section id="electronics">
-			<h2>Electronics</h2>
+		<section id="computers">-->
 
-			<ul>
-				<li>
-					<a href="projects/weather_station_1.html" title="Building a weather station with Arduino">Weather Station</a>
-				</li>
-				<li>
-					<a href="projects/tda2005_audio_amp.html" title="Creating an audio amplifier from scratch">Audio Amplifier</a>
-				</li>
-			</ul>
-		</section>
+		<a href="projects/tipe.html" title="Travail de recherche scientifique réalisé en CPGE" class="card-container">
+			<article id="tipe" class="card">
+				<figure>
+					<img src="../ressource/img/projects/thumbnail/tipe.png" alt="TIPE" width="500" height="500">
+					<figcaption>TIPE</figcaption>
+				</figure>
+				<p>
+					Confinement magnétique de magma: Un nouvel atout pour les énergies du futur
+				</p>
+			</article>
+		</a>
 
-		<section id="computers">
-			<h2>Computers</h2>
+		<a href="https://github.com/FABallemand/ray_tracing" title="My ray tracing attempts" class="card-container">
+			<article id="ray_traycing" class="card">
+				<figure>
+					<img src="../ressource/img/projects/thumbnail/ray_tracing.png" alt="Project1" width="500" height="500">
+					<figcaption>Ray Tracing</figcaption>
+				</figure>
+				<p>
+					My differents attempts at implementing ray tracing !
+				</p>
+			</article>
+		</a>
 
-			<ul>
-				<li>
-					<a href="projects/laptop_screen.html" title="Reusing a laptop screen as an external computer screen">Portable Screen</a>
-				</li>
-				<li>
-					<a href="projects/my_PC.html" title="Building my first workstation">Building a PC</a>
-				</li>
-				<li>
-					<a href="projects/laptop_upgrade.html" title="Upgrading my first computer">Upgrading my First Laptop</a>
-				</li>
-			</ul>
-		</section>
+		<a href="https://github.com/FABallemand/crazy_driver_1" title="2D car video game made with Pygame" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>Crazy Driver</figcaption>
+				</figure>
+				<p>
+					My first 2D video game 🎮
+				</p>
+			</article>
+		</a>
+
+		<a href="projects/dblp.html" title="Hand made C program able to parse and perform operations on a large XML database (school project)" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>DBLP Parsing and Analysing Tool</figcaption>
+				</figure>
+				<p>
+					First C project
+				</p>
+			</article>
+		</a>
+
+		<a href="projects/chess.html" title="Chess video game made with C++ (school project)" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>Chess Video Game</figcaption>
+				</figure>
+				<p>
+					Using C++ classes to create a video game!
+				</p>
+			</article>
+		</a>
+
+		<a href="https://github.com/FABallemand/AA_tools" title="Useful tool for industrial designer made with Python" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>Industrial Designer Tool</figcaption>
+				</figure>
+				<p>
+					Creating GUI
+				</p>
+			</article>
+		</a>
+
+		<a href="https://github.com/FABallemand/ProjetCompilation" title="Compiler for a bash-like programming language named SoS (school project)" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>SoS Compiler</figcaption>
+				</figure>
+				<p>
+					Writting a compiler from scratch...
+				</p>
+			</article>
+		</a>
+		
+		<a href="https://github.com/FABallemand/crazy_driver_2" title="2D car video game made with C++/SDL" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>Crazy Driver 2</figcaption>
+				</figure>
+				<p>
+					The saga continues 🚗
+				</p>
+			</article>
+		</a>
+
+		<a href="projects/stool.html" title="Repairing as stool using a 3D-printer" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>Stool Repair</figcaption>
+				</figure>
+				<p>
+					3D printing useful things
+				</p>
+			</article>
+		</a>
+
+		<a href="projects/weather_station_1.html" title="Building a weather station with Arduino" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>Weather Station</figcaption>
+				</figure>
+				<p>
+					☀️ 🌦 🌧 ⛈
+				</p>
+			</article>
+		</a>
+
+		<a href="projects/tda2005_audio_amp.html" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" title="Creating an audio amplifier from scratch" alt="Project1" width="500" height="500">
+					<figcaption>Audio Amplifier</figcaption>
+				</figure>
+				<p>
+					🎵
+				</p>
+			</article>
+		</a>
+
+		<a href="projects/laptop_screen.html" title="Reusing a laptop screen as an external computer screen" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>Portable Screen</figcaption>
+				</figure>
+				<p>
+				</p>
+			</article>
+		</a>
+
+		<a href="projects/my_PC.html" title="Building my first workstation" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>Building a PC</figcaption>
+				</figure>
+				<p>
+					🖥
+				</p>
+			</article>
+		</a>
+
+		<a href="projects/laptop_upgrade.html" title="Upgrading my first computer" class="card-container">
+			<article id="project1" class="card">
+				<figure>
+					<img src="../ressource/img/icon.jpg" alt="Project1" width="500" height="500">
+					<figcaption>Upgrading my First Laptop</figcaption>
+				</figure>
+				<p>
+					💻
+				</p>
+			</article>
+		</a>
 	</main>
 
 	<hr>
