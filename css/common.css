@@ -268,13 +268,15 @@ img {
 
 .content-pic-figure {
     width: 100%;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    padding: 1rem;
     display: flex;
     justify-content: center;
 }
 
 
 .content-pic-figure img {
+    border: solid 2px var(--DARK-COLOR);
     display: block;
     width: clamp(200px, 80%, 900px);
     height: auto;
@@ -282,13 +284,15 @@ img {
 
 .content-pic-figure-v {
     width: 100%;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    padding: 1rem;
     display: flex;
     justify-content: center;
 }
 
 
 .content-pic-figure-v img {
+    border: solid 2px var(--DARK-COLOR);
     display: block;
     width: clamp(50px, 80%, 400px);
     height: auto;
