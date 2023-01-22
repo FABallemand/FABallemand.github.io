@@ -124,7 +124,7 @@ img {
 /* End All Page */
 /* Utility Classes */
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -256,6 +256,11 @@ img {
     padding-left: 10px;
     background-color: hsla(0, 0%, 0%, 0.40);
     padding: 0.25rem;
+    border-radius: var(--BORDER-RADIUS);
+}
+
+.bordered ul {
+    background-color: hsla(0, 0%, 0%, 0.40);
     border-radius: var(--BORDER-RADIUS);
 }
 
