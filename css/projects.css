@@ -1,4 +1,4 @@
-main {
+main, section {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@ img {
 
 /* || X-SMALL */
 @media screen and (max-width: 576px) {
-    main {
+    main, section {
         justify-content: center;
         flex-flow: row wrap;
         padding: 1rem;
@@ -81,7 +81,7 @@ img {
 
 /* || SMALL */
 @media screen and (min-width: 576px) {
-    main {
+    main, section {
         justify-content: center;
         flex-flow: row wrap;
         padding: 1rem;
@@ -95,7 +95,7 @@ img {
 
 /* || MEDIUM */
 @media screen and (min-width: 768px) {
-    main {
+    main, section {
         justify-content: center;
         flex-flow: row wrap;
         padding: 1rem;
