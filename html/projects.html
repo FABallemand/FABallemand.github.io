@@ -1,449 +1,725 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Fabien Allemand | Projects</title>
-	<meta name="author" content="Fabien Allemand">
-	<meta name="description" content="Projects">
-	<link rel="icon" href="ressource/icon.jpg" type="image/x-icon">
-	<link rel="stylesheet" href="../css/common.css">
-	<link rel="stylesheet" href="../css/sidenav.css">
-	<link rel="stylesheet" href="../css/projects.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Fabien Allemand" />
+    <title>Fabien Allemand | Projects</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../ressources/img/icon.jpg" type="image/x-icon">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/my_styles.css" rel="stylesheet" />
 </head>
 
 <body>
-	<header>
-		<div class="header-container">
-			<section id="header" class="header">
-				<h1 class="h1">
-					<span class="nowrap">My projects 🪛</span>
-				</h1>
-			</section>
-		</div>
-	</header>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Fabien Allemand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="html/projects.html">All Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">School Projects</a></li>
+                            <li><a class="dropdown-item" href="#!">Personnal Projects</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                </ul>
+                <!-- <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form> -->
+                <figure class="contact-pic-figure">
+                    <a href="mailto:allemand.fabien@orange.fr" target="_blank">
+                        <img src="../ressources/img/email.png" alt="Linked-In" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+                <figure class="contact-pic-figure">
+                    <a href="https://www.linkedin.com/in/fabien-allemand-309b93208/" target="_blank">
+                        <img src="../ressources/img/linked_in.png" alt="Linked-In" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+                <figure class="contact-pic-figure">
+                    <a href="https://github.com/FABallemand" target="_blank">
+                        <img src="../ressources/img/github.png" alt="GitHub" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Hello 👋 I am Fabien</h1>
+                <p class="lead fw-normal text-white-50 mb-0">This is my personnal website about engineering and computer
+                    science</p>
+            </div>
+        </div>
+    </header>
+    <!-- Projects Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-	<nav class="sidenav">
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../index.html">Home</a></button>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../index.html#news">News</a></button>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../index.html#education">Education</a></button>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../index.html#work_exp">Internship</a></button>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="#">Projects</a></button>
-			<div class="subnav-content">
-				<a href="#programming" class="subnav-content-cat">Programming 🖥</a>
-				<a href="#3D_printing" class="subnav-content-cat">3D Printing 🔩</a>
-				<a href="#electronics" class="subnav-content-cat">Electronics 🔋</a>
-			</div>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="#">Others</a></button>
-			<div class="subnav-content">
-				<a href="readings.html" class="subnav-content-cat">What I read 📖</a>
-				<a href="sport.html" class="subnav-content-cat">Sport 👟</a>
-				<a href="trips.html" class="subnav-content-cat">Trips 🛫</a>
-			</div>
-		</div>
-		<div class="subnav">
-			<button class="subnavbtn"><a href="../index.html#contact">Contact</a></button>
-		</div>
-	</nav>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">🤩
+                        </div>
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/ezgpx.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">ezGPX</h5>
+                                <!-- Project reviews-->
+                                <!-- <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div> -->
+                                <!-- Project Description-->
+                                Easy to use Python GPX library 🗺️
+                            </div>
+                        </div>
+                        <!-- Project actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/ezGPX" title="ezGPX">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-	<main>
-		<!--
-		<section id="programming"
-		<section id="3D_printing">
-		<section id="electronics">
-		<section id="computers">-->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/gpx_tool.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">GPX Tool</h5>
+                                <!-- Project Description-->
+                                Easy to use GPX files utility software 🌍
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/GPX_Tool" title="GPX_Tool">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/GPX_Tool" title="GPX Tool" class="card-container">
-			<article id="gpx_tool" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/gpx_tool.png" alt="GPX Tool" width="500" height="500">
-					<figcaption>GPX Tool</figcaption>
-				</figure>
-				<p>
-					Easy to use GPX files utility software 🌍
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/seat_belt.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Seat Belt Clip</h5>
+                                <!-- Project Description-->
+                                Improve seat belt ease of use 🚘
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="projects/seat_belt.html" title="3D Printed Seat Belt Clip">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/ezGPX" title="ezGPX" class="card-container">
-			<article id="ezgpx" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/ezgpx.png" alt="ezGPX" width="500" height="500">
-					<figcaption>ezGPX</figcaption>
-				</figure>
-				<p>
-					Easy to use Python GPX library 🗺️
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/nlp_2023.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">NLP on Movie Synopsis</h5>
+                                <!-- Project Description-->
+                                Information retrieval in movie critics database 📽
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/ProjetTAL"
+                                    title="Information retrieval in movie critics database">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/seat_belt.html" title="3D Printed Seat Belt Clip" class="card-container">
-			<article id="seat_belt_clip" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/seat_belt.png" alt="3D Printed Seat Belt Clip" width="500" height="500">
-					<figcaption>Seat Belt Clip</figcaption>
-				</figure>
-				<p>
-					Improve seat belt ease of use 🚘
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/rc_car.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">RC Car</h5>
+                                <!-- Project Description-->
+                                Building a radio-controlled car from scratch 🚗
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="projects/rc_car.html"
+                                    title="RC Car">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/ProjetTAL" title="Information retrieval in movie critics database"
-			class="card-container">
-			<article id="nlp_2023" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/nlp_2023.png"
-						alt="Information retrieval in movie critics database" width="500" height="500">
-					<figcaption>NLP</figcaption>
-				</figure>
-				<p>
-					Information retrieval in movie critics database 📽
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/pi.jpg" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Projet Ingénieur</h5>
+                                <!-- Project Description-->
+                                Analyse de l'état des routes par analyse de données accélérométriques 📈
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="projects/pi.html"
+                                    title="Projet Ingénieur">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/rc_car.html" title="RC Car" class="card-container">
-			<article id="rc_car" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/rc_car.png" alt="" width="500" height="500">
-					<figcaption>RC Car</figcaption>
-				</figure>
-				<p>
-					Building a radio-controlled car from scratch 🚗
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/apprentissage_auto.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Defect Prediction on Production Line</h5>
+                                <!-- Project Description-->
+                                AI solution for industrial application 🛠
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/DefectPredictionOnProductionLines"
+                                    title="Defect Prediction on Production Line">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/pi.html" title="Projet Ingénieur" class="card-container">
-			<article id="pi" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/pi.jpg" alt="" width="500" height="500">
-					<figcaption>Projet Ingénieur</figcaption>
-				</figure>
-				<p>
-					Analyse de l'état des routes par analyse de données accélérométriques 📈
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/pacman.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Pac-Man: The Video Game</h5>
+                                <!-- Project Description-->
+                                Using advanced C++ 11/14/17/20 features to recreate a famous retro video game 🕹️
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/Pac-Man" title="Pac-Man">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/DefectPredictionOnProductionLines"
-			title="Defect Prediction on Production Line" class="card-container">
-			<article id="apprentissage_auto" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/apprentissage_auto.png"
-						alt="Defect Prediction on Production Line" width="500" height="500">
-					<figcaption>Defect Prediction on Production Line</figcaption>
-				</figure>
-				<p>
-					AI solution for industrial application 🛠
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/algorithmes_texte.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">GenBank Database Parser</h5>
+                                <!-- Project Description-->
+                                🧬
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/ProjetAlgorithmesDuTexte"
+                                    title="GenBank database parser">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/Pac-Man" title="Pac-Man video game made with C++ (school project)"
-			class="card-container">
-			<article id="pacman" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/pacman.png"
-						alt="Pac-Man video game made with C++ (school project)" width="500" height="500">
-					<figcaption>Pac-Man: The Video Game</figcaption>
-				</figure>
-				<p>
-					Using advanced C++ 11/14/17/20 features to recreate a famous retro video game 🕹️
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/websemantic.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Semantic Web</h5>
+                                <!-- Project Description-->
+                                Creating an ontology to describe songs 🧑‍🎤
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/ProjetModeleDeConnaissances"
+                                    title="Ontology to describe songs">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/ProjetAlgorithmesDuTexte" title="GenBank database parsing"
-			class="card-container">
-			<article id="genbank" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/algorithmes_texte.png" alt="GenBank database parsinge"
-						width="500" height="500">
-					<figcaption>GenBank Database Parsing</figcaption>
-				</figure>
-				<p>
-					🧬
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/sos.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">SoS Compiler</h5>
+                                <!-- Project Description-->
+                                Writting a compiler from scratch 🆘
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/ProjetCompilation"
+                                    title="Compiler for a bash-like programming language named SoS">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/ProjetModeleDeConnaissances"
-			title="Creating an ontology to describe songs" class="card-container">
-			<article id="websemantic" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/websemantic.png"
-						alt="Creating an ontology to describe songs" width="500" height="500">
-					<figcaption>Semantic Web</figcaption>
-				</figure>
-				<p>
-					Creating an ontology to describe songs 🧑‍🎤
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/chess.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Chess Video Game</h5>
+                                <!-- Project Description-->
+                                Using C++ to create a video game! 👑
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="projects/chess.html"
+                                    title="Chess video game made with C++">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/ProjetCompilation"
-			title="Compiler for a bash-like programming language named SoS (school project)" class="card-container">
-			<article id="sos" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/sos.png"
-						alt="Compiler for a bash-like programming language named SoS (school project)" width="500"
-						height="500">
-					<figcaption>SoS Compiler</figcaption>
-				</figure>
-				<p>
-					Writting a compiler from scratch 🆘
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/crazy_driver_2.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Crazy Driver 2</h5>
+                                <!-- Project Description-->
+                                The saga continues 🚗
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/crazy_driver_2"
+                                    title="2D car video game made with C++/SDL">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/chess.html" title="Chess video game made with C++ (school project)" class="card-container">
-			<article id="chess" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/chess.png"
-						alt="Chess video game made with C++ (school project)" width="500" height="500">
-					<figcaption>Chess Video Game</figcaption>
-				</figure>
-				<p>
-					Using C++ to create a video game! 👑
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/aa_tools.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Industrial Designer Tool</h5>
+                                <!-- Project Description-->
+                                Calculation tool with GUI 🏭
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/AA_tools"
+                                    title="Industrial designer utility software">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/crazy_driver_2" title="2D car video game made with C++/SDL"
-			class="card-container">
-			<article id="crazy_driver_2" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/crazy_driver_2.png"
-						alt="2D car video game made with C++/SDL" width="500" height="500">
-					<figcaption>Crazy Driver 2</figcaption>
-				</figure>
-				<p>
-					The saga continues 🚗
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/cemosis_internship.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Building Energy Simulation</h5>
+                                <!-- Project Description-->
+                                Cooperated with researchers to develop a platform of services for building energy simulation 🌡♻️
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="internship/cemosis.html"
+                                    title="Cemosis Internship">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/AA_tools" title="Industrial designer utility software"
-			class="card-container">
-			<article id="aa_tools" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/aa_tools.png"
-						alt="Industrial designer utility software" width="500" height="500">
-					<figcaption>Industrial Designer Tool</figcaption>
-				</figure>
-				<p>
-					Calculation tool with GUI 🏭
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/stool.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Stool Repair</h5>
+                                <!-- Project Description-->
+                                3D printing useful things 🪑
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="projects/stool.html"
+                                    title="Repairing as stool using a 3D-printer">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="internship/cemosis.html" title="Cemosis Internship" class="card-container">
-			<article id="cemosis_internship" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/cemosis_internship.png" alt="Cemosis Internship"
-						width="500" height="500">
-					<figcaption>Building Energy Simulation</figcaption>
-				</figure>
-				<p>
-					Cooperated with researchers to develop a platform of services for building energy simulation 🌡♻️
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/dblp.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">DBLP Parsing and Analysis Tool</h5>
+                                <!-- Project Description-->
+                                First 🇨 project
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="projects/dblp.html"
+                                    title="C program to parse and perform operations on a large XML database">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/stool.html" title="Repairing as stool using a 3D-printer" class="card-container">
-			<article id="stool" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/stool.png" alt="Repairing as stool using a 3D-printer"
-						width="500" height="500">
-					<figcaption>Stool Repair</figcaption>
-				</figure>
-				<p>
-					3D printing useful things 🪑
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/weather_station_1.jpg" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Weather Station</h5>
+                                <!-- Project Description-->
+                                ☀️ 🌦 🌧 ⛈
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="projects/weather_station_1.html"
+                                    title="Building a weather station with Arduino">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/dblp.html"
-			title="C program able to parse and perform operations on a large XML database (school project)"
-			class="card-container">
-			<article id="dblp" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/dblp.png"
-						alt="C program able to parse and perform operations on a large XML database (school project)"
-						width="500" height="500">
-					<figcaption>DBLP Parsing and Analysing Tool</figcaption>
-				</figure>
-				<p>
-					First 🇨 project
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/hic_2021.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">HIC 2021 - AI Edition</h5>
+                                <!-- Project Description-->
+                                💻
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="projects/hic_2021.html"
+                                    title="HIC 2021">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/weather_station_1.html" title="Building a weather station with Arduino"
-			class="card-container">
-			<article id="weather_station_1" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/weather_station_1.jpg"
-						alt="Building a weather station with Arduino" width="500" height="500">
-					<figcaption>Weather Station</figcaption>
-				</figure>
-				<p>
-					☀️ 🌦 🌧 ⛈
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/audio_amp.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Audio Amplifier</h5>
+                                <!-- Project Description-->
+                                🎵
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="projects/tda2005_audio_amp.html"
+                                    title="DIY Audio Amplifier">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/hic_2021.html" title="HIC 2021" class="card-container">
-			<article id="hic_2021" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/hic_2021.png" alt="HIC 2021" width="500" height="500">
-					<figcaption>HIC 2021 - AI Edition</figcaption>
-				</figure>
-				<p>
-					💻
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/ray_tracing.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Ray Tracing</h5>
+                                <!-- Project Description-->
+                                My differents attempts at implementing ray tracing! 🔦
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/ray_tracing"
+                                    title="My ray tracing attempts">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/tda2005_audio_amp.html" title="DIY Audio Amplifier" class="card-container">
-			<article id="audio_amp" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/audio_amp.png" title="Creating a DIY audio amplifier"
-						alt="DIY Audio Amplifier" width="500" height="500">
-					<figcaption>Audio Amplifier</figcaption>
-				</figure>
-				<p>
-					🎵
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/crazy_driver_1.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Crazy Driver</h5>
+                                <!-- Project Description-->
+                                My first 2D video game 🎮
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="https://github.com/FABallemand/crazy_driver_1"
+                                    title="2D car video game made with Python/Pygame">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/ray_tracing" title="My ray tracing attempts" class="card-container">
-			<article id="ray_traycing" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/ray_tracing.png" alt="My ray tracing attempts"
-						width="500" height="500">
-					<figcaption>Ray Tracing</figcaption>
-				</figure>
-				<p>
-					My differents attempts at implementing ray tracing! 🔦
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/tipe.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">TIPE</h5>
+                                <!-- Project Description-->
+                                Confinement magnétique de magma: Un nouvel atout pour les énergies du futur ☢️
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="projects/tipe.html"
+                                    title="Travail de recherche scientifique réalisé en CPGE">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="https://github.com/FABallemand/crazy_driver_1" title="2D car video game made with Pygame"
-			class="card-container">
-			<article id="crazy_driver_1" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/crazy_driver_1.png"
-						alt="2D car video game made with Pygame" width="500" height="500">
-					<figcaption>Crazy Driver</figcaption>
-				</figure>
-				<p>
-					My first 2D video game 🎮
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/portable_screen.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Portable Screen</h5>
+                                <!-- Project Description-->
+                                🎒
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="projects/laptop_screen.html"
+                                    title="Reusing a laptop screen as an external computer screen">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/tipe.html" title="Travail de recherche scientifique réalisé en CPGE" class="card-container">
-			<article id="tipe" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/tipe.png" alt="TIPE" width="500" height="500">
-					<figcaption>TIPE</figcaption>
-				</figure>
-				<p>
-					Confinement magnétique de magma: Un nouvel atout pour les énergies du futur ☢️
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/drawer_pc.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Drawer PC</h5>
+                                <!-- Project Description-->
+                                🗄️
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="projects/drawer_pc.html"
+                                    title="Building a computer inside a drawer">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/laptop_screen.html" title="Reusing a laptop screen as an external computer screen"
-			class="card-container">
-			<article id="laptop_screen" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/portable_screen.png"
-						alt="Reusing a laptop screen as an external computer screen" width="500" height="500">
-					<figcaption>Portable Screen</figcaption>
-				</figure>
-				<p>
-					🎒
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/wooden_pc_case.png" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Wooden PC Case</h5>
+                                <!-- Project Description-->
+                                🌳
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="projects/wooden_pc_case.html"
+                                    title="Building a wooden computer case">Article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<a href="projects/drawer_pc.html" title="Building a computer inside a drawer" class="card-container">
-			<article id="drawer_pc" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/drawer_pc.png"
-						alt="Building a computer inside a drawer" width="500" height="500">
-					<figcaption>Drawer PC</figcaption>
-				</figure>
-				<p>
-					🗄️
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/laptop_upgrade_1.jpg" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Upgrading my First Laptop</h5>
+                                <!-- Project Description-->
+                                💻
+                            </div>
+                        </div>
+                        <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href=""
+                                    title="">Article</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
 
-		<a href="projects/wooden_pc_case.html" title="Building a wooden computer case" class="card-container">
-			<article id="wooden_pc_case" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/wooden_pc_case.png"
-						alt="Building a wooden computer case" width="500" height="500">
-					<figcaption>Wooden PC Case</figcaption>
-				</figure>
-				<p>
-					🌳
-				</p>
-			</article>
-		</a>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Project image-->
+                        <img class="card-img-top" src="../ressources/img/projects/thumbnail/pc_building.jpg" />
+                        <!-- Project details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Project name-->
+                                <h5 class="fw-bolder">Building my First PC</h5>
+                                <!-- Project Description-->
+                                🖥
+                            </div>
+                        </div>
+                        <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href=""
+                                    title="">Article</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
 
-		<a href="" title="Upgrading my first laptop" class="card-container">
-			<article id="laptop_upgrade_1" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/laptop_upgrade_1.JPG" alt="Upgrading my first laptop"
-						width="500" height="500">
-					<figcaption>Upgrading my First Laptop</figcaption>
-				</figure>
-				<p>
-					💻
-				</p>
-			</article>
-		</a>
-
-		<a href="" title="Building my first workstation" class="card-container">
-			<article id="pc_build_1" class="card">
-				<figure>
-					<img src="../ressource/img/projects/thumbnail/pc_building.JPG" alt="Building my first workstation"
-						width="500" height="500">
-					<figcaption>Building a PC</figcaption>
-				</figure>
-				<p>
-					🖥
-				</p>
-			</article>
-		</a>
-	</main>
-
-	<hr>
-
-	<footer>
-		<p class="center">
-			&copy; Fabien Allemand
-		</p>
-	</footer>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Fabien Allemand</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
