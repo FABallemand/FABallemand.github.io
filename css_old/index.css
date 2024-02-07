@@ -2,7 +2,7 @@
 
 .presentation-container {
     background-color: var(--BG-COLOR);
-    background-image: url('../ressource/img/trips/betesa_1.jpg');
+    background-image: url('../ressource/trips/betesa_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,7 +17,7 @@
     gap: 40px;
 
     /* background-color: var(--BG-COLOR);
-    background-image: url('../ressource/img/trips/betesa_1.jpg');
+    background-image: url('../ressource/trips/betesa_1.jpg');
     background-repeat: no-repeat;
     background-size: cover; */
 
@@ -97,7 +97,7 @@
 
 .contact-container {
     background-color: var(--BG-COLOR);
-    background-image: url('../ressource/img/trips/betesa_1.jpg');
+    background-image: url('../ressource/trips/betesa_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -112,7 +112,7 @@
     gap: 40px;
 
     /* background-color: var(--BG-COLOR);
-    background-image: url('../ressource/img/trips/betesa_1.jpg');
+    background-image: url('../ressource/trips/betesa_1.jpg');
     background-repeat: no-repeat;
     background-size: cover; */
 
