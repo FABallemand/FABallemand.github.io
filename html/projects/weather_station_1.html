@@ -1,77 +1,105 @@
 <!doctype html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Fabien Allemand | Weather Station</title>
-    <meta name="author" content="Fabien Allemand">
-    <meta name="description" content="Projects">
-    <link rel="icon" href="ressource/icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/sidenav.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Fabien Allemand" />
+    <title>FA | Weather Station</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../ressources/icon.jpg" type="image/x-icon">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../css/styles.css" rel="stylesheet" />
+    <link href="../../css/my_styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <section id="header" class="header">
-                <h1 class="h1">
-                    <span class="nowrap">Weather Station</span>
-                </h1>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Fabien Allemand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#about">About</a></li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="html/projects.html">All Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">School Projects</a></li>
+                            <li><a class="dropdown-item" href="#!">Personnal Projects</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                </ul>
+                <!-- <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form> -->
+                <figure class="contact-pic-figure">
+                    <a href="mailto:allemand.fabien@orange.fr" target="_blank">
+                        <img class="img-fluid" src="../../ressources/email.png" alt="Linked-In" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+                <figure class="contact-pic-figure">
+                    <a href="https://www.linkedin.com/in/fabien-allemand-309b93208/" target="_blank">
+                        <img class="img-fluid" src="../../ressources/linked_in.png" alt="Linked-In" width="96"
+                            height="96" class="contact-pic-img">
+                    </a>
+                </figure>
+                <figure class="contact-pic-figure">
+                    <a href="https://github.com/FABallemand" target="_blank">
+                        <img class="img-fluid" src="../../ressources/github.png" alt="GitHub" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Weather Station</h1>
                 <date>2021-2022</date>
                 <address>Strasbourg, France</address>
-                <a href="https://github.com/FABallemand/weather_station_1" target="_blank">GitHub repository</a>
-            </section>
+            </div>
         </div>
     </header>
 
-    <div class="sidenav">
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html">Home</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#news">News</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#education">Education</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#work_exp">Internship</a></button>
-        </div>
-        <!-- <div class="subnav">
-			<button class="subnavbtn"><a href="html/equipement.html">Equipement</a></button>
-		</div> -->
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../projects.html">Projects</a></button>
-            <div class="subnav-content">
-                <a href="../projects.html#programming" class="subnav-content-cat">Programming 🖥</a>
-                <a href="../projects.html#3D_printing" class="subnav-content-cat">3D Printing 🔩</a>
-                <a href="../projects.html#electronics" class="subnav-content-cat">Electronics 🔋</a>
-            </div>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="#">Others</a></button>
-            <div class="subnav-content">
-                <a href="../readings.html" class="subnav-content-cat">What I read 📖</a>
-                <a href="../sport.html" class="subnav-content-cat">Sport 👟</a>
-                <a href="../trips.html" class="subnav-content-cat">Trips 🛫</a>
-            </div>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#contact">Contact</a></button>
-        </div>
-    </div>
-
-    <main class="content">
-        <section>
+    <!-- Article-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
             <h2>Living in Strasbourg</h2>
             <p>
-                I used to live in the south of France only one hour away from the closest beach where you can expect to
+                I used to live in the south of France only one hour away from the closest beach where you can expect
+                to
                 enjoy the warmth of the sun even in the middle of winter. Then I moved to Strasbourg...
             </p>
             <p>
-                Strasbourg is a really nice city with a very interesting background, a unique local culture and a lot of
-                delicious meals. The only issue being the weather which is very cold and humid with a noticeable lack
+                Strasbourg is a really nice city with a very interesting background, a unique local culture and a
+                lot of
+                delicious meals. The only issue being the weather which is very cold and humid with a noticeable
+                lack
                 of sun.
             </p>
             <p>
@@ -80,8 +108,6 @@
                 sort of weather
                 station to monitor temperature and humidity!
             </p>
-        </section>
-        <section>
             <h2>
                 Learning Arduino Basics
             </h2>
@@ -104,38 +130,43 @@
                 </li>
             </ul>
             <p>
-                The initial goal was to make a little device that can display the current date and time as well as the
+                The initial goal was to make a little device that can display the current date and time as well as
+                the
                 temperature and humidity inside and outside. I grabbed a breadboard and started prototyping!
             </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/weather_station_1/1.jpg" alt="Picture of the breadboard."
-                    title="Final prototype." width="480" height="270">
-            </figure>
+            <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                <img class="img-fluid" src="../../ressources/projects/weather_station_1/1.jpg"
+                    alt="Picture of the breadboard." title="Final prototype.">
+            </div>
             <p>
-                After a healthy amount of trial-and-error and debugging I obtained this little plate of spaghetti. But
+                After a healthy amount of trial-and-error and debugging I obtained this little plate of spaghetti.
+                But
                 it worked!
             </p>
             <p>
                 After more reflexion I decided to replace the two potentiometers that allow to adjust the display's
-                luminosity for a Light Dynamic Resistor (LDR) which will allow me to adjust the brightness of the screen
+                luminosity for a Light Dynamic Resistor (LDR) which will allow me to adjust the brightness of the
+                screen
                 through software according to the room luminosity.
             </p>
             <p>
                 After further investigation, the wireless modules that I used are not very good. They require an
-                additional antena otherwise they only work if they are half a breadboard away from each other. Moreover,
-                having a module mesuroing temperature outside means battery, a subject that I did not had time to tackle
+                additional antena otherwise they only work if they are half a breadboard away from each other.
+                Moreover,
+                having a module mesuroing temperature outside means battery, a subject that I did not had time to
+                tackle
                 just yet. So I momentarily abandonned the outside probe.
             </p>
-        </section>
-        <section>
             <h2>
                 Custom PCB
             </h2>
             <p>
-                As I wanted to create a very basic device (with a basic rectangle enclosure) I simply made a rectangle
+                As I wanted to create a very basic device (with a basic rectangle enclosure) I simply made a
+                rectangle
                 PCB with reasonable dimensions using <a href="https://www.kicad.org/">KiCad</a>.
             </p>
-            <p class="warning">Be careful while designing your PCB! You have to take into account on which face you want
+            <p class="warning">Be careful while designing your PCB! You have to take into account on which face you
+                want
                 to place each component otherwise you might not be able to solder it...
             </p>
             <p>
@@ -144,66 +175,72 @@
                     href="https://www.lpkfusa.com/products/pcb_prototyping/machines/protomat_s64/"
                     target="_blank">Protomat-S64</a>.
                 <br>
-                After a bit of (bad) soldering work and repair (because I burned a trace while unsoldering the 16 pin
+                After a bit of (bad) soldering work and repair (because I burned a trace while unsoldering the 16
+                pin
                 LCD) I obtained this beautiful weather station.
             </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/weather_station_1/2.jpg" alt="Weather station Arduino side."
-                    title="Weather station Arduino side." width="480" height="270">
-            </figure>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/weather_station_1/3.jpg" alt="Weather station LCD side."
-                    title="Weather station LCD side." width="480" height="270">
-            </figure>
-        </section>
-        <section>
+            <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                <img class="img-fluid" src="../../ressources/projects/weather_station_1/2.jpg"
+                    alt="Weather station Arduino side." title="Weather station Arduino side.">
+            </div>
+            <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                <img class="img-fluid" src="../../ressources/projects/weather_station_1/3.jpg"
+                    alt="Weather station LCD side." title="Weather station LCD side.">
+            </div>
             <h2>
                 3D-printed Enclosure
             </h2>
             <p>
-                Obviously if I want to use it I have to put it into some sort of enclosure not only to protect it but
-                also to make it stand up. As I was a 3D-printing novice I settled for a very simple design with no back
+                Obviously if I want to use it I have to put it into some sort of enclosure not only to protect it
+                but
+                also to make it stand up. As I was a 3D-printing novice I settled for a very simple design with no
+                back
                 panel and three holes to accomodate the screen, the LDR and the Arduino's USB port.
                 <br>
-                As you can see on the picture underneath the first print turned out perfect on apparence. But in fact
-                the walls are a little to flexible and looking at it closely you will notice that the hole for the LDR
+                As you can see on the picture underneath the first print turned out perfect on apparence. But in
+                fact
+                the walls are a little to flexible and looking at it closely you will notice that the hole for the
+                LDR
                 is not where it should be... oups 🤭
             </p>
-            <figure class="content-pic-figure-v">
-                <img src="../../ressource/projects/weather_station_1/4.jpg" alt="Weather station LCD side."
-                    title="Weather station LCD side." width="270" height="480">
-            </figure>
-            <!-- <video width="480" height="270" controls muted>
-                <source src="../../ressource/projects/weather_station_1/3D_print_1.mp4" type="video/mp4">
-            </video> -->
-        </section>
-        <section>
+            <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                <img class="img-fluid" src="../../ressources/projects/weather_station_1/4.jpg"
+                    alt="Weather station LCD side." title="Weather station LCD side." width="270" height="480">
+            </div>
+            <!-- <video controls muted>
+                    <source src="../../ressources/projects/weather_station_1/3D_print_1.mp4" type="video/mp4">
+                </video> -->
             <h2>Conclusion</h2>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/weather_station_1/7.jpg" alt="Weather station"
-                    title="Weather station" width="480" height="270">
-            </figure>
+            <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                <img class="img-fluid" src="../../ressources/projects/weather_station_1/7.jpg" alt="Weather station"
+                    title="Weather station">
+            </div>
             <p>
-                With a little time and effort I managed to create a simple weather station based on Arduino. It is able
+                With a little time and effort I managed to create a simple weather station based on Arduino. It is
+                able
                 to keep track of time and measure both temperature and humidity. These three informations are easily
                 readable on a LCD screen which brightness adapt in function of the ambiant luminosity. All the
                 electronic modules are connected via a custom PCB and secured in a 3D-printed enclosure.
             </p>
             <p>
-                While this first version allowed me to learn the basics it could also be improved. I already have some
+                While this first version allowed me to learn the basics it could also be improved. I already have
+                some
                 ideas regarding other captors, buttons to navigate in the UI, wireless transmission and batteries.
             </p>
-        </section>
+        </div>
+    </section>
 
-    </main>
-
-    <hr>
-
-    <footer>
-        <p class="center">
-            &copy; Fabien Allemand
-        </p>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Fabien Allemand</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

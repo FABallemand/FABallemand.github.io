@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 date:before {
     content: "🗓 ";
 }

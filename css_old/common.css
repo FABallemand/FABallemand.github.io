@@ -156,7 +156,7 @@ img {
 
 .header-container {
     background-color: var(--BG-COLOR);
-    background-image: url('../ressource/trips/betesa_1.jpg');
+    background-image: url('../ressources/trips/betesa_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -172,7 +172,7 @@ img {
     flex-direction: column;
 
     /* background-color: var(--BG-COLOR);
-    background-image: url('../ressource/trips/betesa_1.jpg');
+    background-image: url('../ressources/trips/betesa_1.jpg');
     background-repeat: no-repeat;
     background-size: cover; */
 

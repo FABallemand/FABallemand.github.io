@@ -1,99 +1,141 @@
 <!doctype html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Fabien Allemand | Chess Video Game</title>
-    <meta name="author" content="Fabien Allemand">
-    <meta name="description" content="Projects">
-    <link rel="icon" href="ressource/icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/sidenav.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Fabien Allemand" />
+    <title>FA | Chess Video Game</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../ressources/icon.jpg" type="image/x-icon">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../css/styles.css" rel="stylesheet" />
+    <link href="../../css/my_styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <section id="header" class="header">
-                <h1 class="h1">
-                    Chess Video Game
-                </h1>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Fabien Allemand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#about">About</a></li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="html/projects.html">All Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">School Projects</a></li>
+                            <li><a class="dropdown-item" href="#!">Personnal Projects</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                </ul>
+                <!-- <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form> -->
+                <figure class="contact-pic-figure">
+                    <a href="mailto:allemand.fabien@orange.fr" target="_blank">
+                        <img src="../../ressources/email.png" alt="Linked-In" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+                <figure class="contact-pic-figure">
+                    <a href="https://www.linkedin.com/in/fabien-allemand-309b93208/" target="_blank">
+                        <img src="../../ressources/linked_in.png" alt="Linked-In" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+                <figure class="contact-pic-figure">
+                    <a href="https://github.com/FABallemand" target="_blank">
+                        <img src="../../ressources/github.png" alt="GitHub" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Chess Video Game</h1>
                 <date>2022</date>
                 <address>Strasbourg, France</address>
-            </section>
+            </div>
         </div>
     </header>
 
-    <div class="sidenav">
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html">Home</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#news">News</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#education">Education</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#work_exp">Internship</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../projects.html">Projects</a></button>
-            <div class="subnav-content">
-                <a href="../projects.html#programming" class="subnav-content-cat">Programming 🖥</a>
-                <a href="../projects.html#3D_printing" class="subnav-content-cat">3D Printing 🔩</a>
-                <a href="../projects.html#electronics" class="subnav-content-cat">Electronics 🔋</a>
-            </div>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="#">Others</a></button>
-            <div class="subnav-content">
-                <a href="../readings.html" class="subnav-content-cat">What I read 📖</a>
-                <a href="../sport.html" class="subnav-content-cat">Sport 👟</a>
-                <a href="../trips.html" class="subnav-content-cat">Trips 🛫</a>
-            </div>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#contact">Contact</a></button>
-        </div>
-    </div>
-
-    <main class="content">
-        <section>
+    <!-- Article-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
             <h2>Motivation</h2>
             <p>
-                Having already tackled Object Oriented Programming (OOP) in Python by making <a href="https://github.com/FABallemand/crazy_driver_1">Crazy Driver</a>, I was thrilled at the idea of mixing my newly aquired C skills with OOP. The OOP lecture during my first year at Télécom Physique Strasbourg gave me this opportunity. The final goal of this course was to create a chess video game in C++.
+                Having already tackled Object Oriented Programming (OOP) in Python by making <a
+                    href="https://github.com/FABallemand/crazy_driver_1">Crazy Driver</a>, I was thrilled at the idea of
+                mixing my newly aquired C skills with OOP. The OOP lecture during my first year at Télécom Physique
+                Strasbourg gave me this opportunity. The final goal of this course was to create a chess video game in
+                C++.
             </p>
-        </section>
-        <section>
+
             <h2>Let's play!!</h2>
             <p>
-                Having familiarised myself with the rules of chess (I am definitly not a great chess player 😅) I started to create all the required classes and subclasses in which I could implement all the features. I quickly obtained a basic chess video game playable in the shell.
+                Having familiarised myself with the rules of chess (I am definitly not a great chess player 😅) I
+                started to create all the required classes and subclasses in which I could implement all the features. I
+                quickly obtained a basic chess video game playable in the shell.
             </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/chess/shell.png" alt="Chess video game in shell."
-                    title="Chess video game in shell." width="480" height="270">
-            </figure>
-        </section>
-        <section>
+            <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                <img class="img-fluid" src="../../ressources/projects/chess/shell.png" alt="Chess video game in shell"
+                    title="Chess video game in shell">
+            </div>
+
             <h2>Gameplay improvement</h2>
             <p>
-                As the goal of the lecture was to learn OOP I could have stopped there... But I am deeply passionate about computer graphics and I wanted my game to look cool. I decided to learn how to create a Graphic User Interface (GUI) for my video game. At that time the easiest way was to use the <a href="https://www.libsdl.org/">Simple DirectMedia Layer</a> (SDL). Following <a href="https://lazyfoo.net/tutorials/SDL/index.php">Lazy Foo' Productions SDL tutorials</a>, I managed to build a simple, yet functional GUI. Quite nice, isn't it?? 😎
+                As the goal of the lecture was to learn OOP I could have stopped there... But I am deeply passionate
+                about computer graphics and I wanted my game to look cool. I decided to learn how to create a Graphic
+                User Interface (GUI) for my video game. At that time the easiest way was to use the <a
+                    href="https://www.libsdl.org/">Simple DirectMedia Layer</a> (SDL). Following <a
+                    href="https://lazyfoo.net/tutorials/SDL/index.php">Lazy Foo' Productions SDL tutorials</a>, I
+                managed to build a simple, yet functional GUI. Quite nice, isn't it?? 😎
             </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/chess/SDL.png" alt="Chess video game GUI."
-                    title="Chess video game GUI." width="480" height="270">
-            </figure>
-        </section>
-    </main>
+            <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                <img class="img-fluid" src="../../ressources/projects/chess/SDL.png" alt="Chess video game GUI"
+                    title="Chess video game GUI">
+            </div>
+        </div>
+    </section>
 
-    <hr>
-
-    <footer>
-        <p class="center">
-            &copy; Fabien Allemand
-        </p>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Fabien Allemand</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

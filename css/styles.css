@@ -602,6 +602,17 @@ progress {
   height: auto;
 }
 
+.img-half-fluid {
+  max-width: 50%;
+  height: auto;
+}
+
+.img-quarter-fluid {
+  max-width: 25%;
+  height: auto;
+}
+
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;

@@ -1,118 +1,146 @@
 <!doctype html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Fabien Allemand | TIPE</title>
-    <meta name="author" content="Fabien Allemand">
-    <meta name="description" content="Projects">
-    <link rel="icon" href="ressource/icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/sidenav.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Fabien Allemand" />
+    <title>FA | TIPE</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../ressources/icon.jpg" type="image/x-icon">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../css/styles.css" rel="stylesheet" />
+    <link href="../../css/my_styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <section id="header" class="header">
-                <h1 class="h1">
-                    <span class="nowrap">Confinement magnétique de magma:</span>
-                    <span>Un nouvel atout pour les énergies du futur</span>
-                </h1>
-                <date>2019-2021</date>
-                <address>Montpellier, France</address>
-                <a href="../../ressource/projects/tipe/ALLEMAND_Fabien_TIPE_presentation_code.pdf"
-                    target="_blank">Diaporama de présentation</a>
-                <a href="../../ressource/projects/tipe/simulation_finale.py" target="_blank">Fichier Python</a>
-            </section>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Fabien Allemand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#about">About</a></li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="html/projects.html">All Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">School Projects</a></li>
+                            <li><a class="dropdown-item" href="#!">Personnal Projects</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                </ul>
+                <!-- <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form> -->
+                <figure class="contact-pic-figure">
+                    <a href="mailto:allemand.fabien@orange.fr" target="_blank">
+                        <img src="../../ressources/email.png" alt="Linked-In" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+                <figure class="contact-pic-figure">
+                    <a href="https://www.linkedin.com/in/fabien-allemand-309b93208/" target="_blank">
+                        <img src="../../ressources/linked_in.png" alt="Linked-In" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+                <figure class="contact-pic-figure">
+                    <a href="https://github.com/FABallemand" target="_blank">
+                        <img src="../../ressources/github.png" alt="GitHub" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Confinement magnétique de magma:</h1>
+                <h3 class="display-5 fw-bolder">Un nouvel atout pour les énergies du futur</h1>
+                    <date>2019-2021</date>
+                    <address>Montpellier, France</address>
+            </div>
         </div>
     </header>
 
-    <div class="sidenav">
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html">Home</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#news">News</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#education">Education</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#work_exp">Internship</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../projects.html">Projects</a></button>
-            <div class="subnav-content">
-                <a href="../projects.html#programming" class="subnav-content-cat">Programming 🖥</a>
-                <a href="../projects.html#3D_printing" class="subnav-content-cat">3D Printing 🔩</a>
-                <a href="../projects.html#electronics" class="subnav-content-cat">Electronics 🔋</a>
-            </div>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="#">Others</a></button>
-            <div class="subnav-content">
-                <a href="../readings.html" class="subnav-content-cat">What I read 📖</a>
-                <a href="../sport.html" class="subnav-content-cat">Sport 👟</a>
-                <a href="../trips.html" class="subnav-content-cat">Trips 🛫</a>
-            </div>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#contact">Contact</a></button>
-        </div>
-    </div>
-
-    <main class="content">
-        <section>
-            <h2>Confinement magnétique de magma: Un nouvel atout pour les énergies du futur</h2>
+    <!-- Article-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2>
+                Confinement magnétique de magma: Un nouvel atout pour les énergies du futur
+            </h2>
             <p>
-                Depuis que j’ai découvert le projet ITER lors d’un cours de physique, je n’ai cessé d’être
+                Depuis que j'ai découvert le projet ITER lors d'un cours de physique, je n'ai cessé d'être
                 impressionné par son envergure et sa complexité. Reproduire dans un laboratoire géant la réaction
-                de fusion nucléaire qui se produit au cœur du soleil et en extraire l’énergie est une prouesse
+                de fusion nucléaire qui se produit au cœur du soleil et en extraire l'énergie est une prouesse
                 scientifique.
             </p>
             <p>
-                Produire suffisamment d’énergie pour satisfaire des besoins croissants est un réel défi. Aux
-                difficultés techniques s’ajoutent des contraintes sociales, économiques et environnementales.
-                La fusion nucléaire, plus performante que la fission nucléaire et produisant peu de déchet s’annonce
-                comme la source d’énergie du futur.
+                Produire suffisamment d'énergie pour satisfaire des besoins croissants est un réel défi. Aux
+                difficultés techniques s'ajoutent des contraintes sociales, économiques et environnementales.
+                La fusion nucléaire, plus performante que la fission nucléaire et produisant peu de déchet s'annonce
+                comme la source d'énergie du futur.
             </p>
             <p>
-                Le confinement magnétique de magma s’affirme aujourd’hui comme une clef dans le développement
-                de nouvelles sources d’énergie puisque c’est l’unique moyen pour reproduire sur Terre les conditions
+                Le confinement magnétique de magma s'affirme aujourd'hui comme une clef dans le développement
+                de nouvelles sources d'énergie puisque c'est l'unique moyen pour reproduire sur Terre les conditions
                 de pression et de température présentes au cœur des étoiles qui permettent la fusion nucléaire [7].
-                Cette réaction libère beaucoup d’énergie et peu de déchet radioactif. Lors de cette réaction, un
-                atome de deutérium et un atome de tritium fusionnent pour libérer un atome d’hélium, un neutron
-                et une grande quantité d’énergie, de l’ordre de 15 MeV [6]. Sur Terre, les réactifs nécessaires sont
-                présents en quantité quasi inépuisable et accessibles (on peut extraire le deutérium de l’eau de mer
+                Cette réaction libère beaucoup d'énergie et peu de déchet radioactif. Lors de cette réaction, un
+                atome de deutérium et un atome de tritium fusionnent pour libérer un atome d'hélium, un neutron
+                et une grande quantité d'énergie, de l'ordre de 15 MeV [6]. Sur Terre, les réactifs nécessaires sont
+                présents en quantité quasi inépuisable et accessibles (on peut extraire le deutérium de l'eau de mer
                 et produire du tritium à partir du lithium), contrairement aux minerais utilisés dans les centrales
-                thermiques [5]. Selon Gary Johnson, responsable du système tokamak ITER, une baignoire d’eau de
-                mer et une batterie d’ordinateur portable suffiraient pour subvenir aux besoins énergétiques d’un
-                individu moyen pendant trente ans [9]. L’ensemble des réactions de fusion au cœur du soleil sur une
-                durée d’une seconde pourrait théoriquement alimenter notre civilisation pendant des millions
-                d’années en produisant seulement des atomes d’hélium [8]. Il est donc nécessaire de comprendre
-                comment fonctionne le confinement magnétique mais aussi d’essayer de maximiser le temps de
-                confinement pour obtenir une centrale de production d’électricité par fusion contrôlée [7].
+                thermiques [5]. Selon Gary Johnson, responsable du système tokamak ITER, une baignoire d'eau de
+                mer et une batterie d'ordinateur portable suffiraient pour subvenir aux besoins énergétiques d'un
+                individu moyen pendant trente ans [9]. L'ensemble des réactions de fusion au cœur du soleil sur une
+                durée d'une seconde pourrait théoriquement alimenter notre civilisation pendant des millions
+                d'années en produisant seulement des atomes d'hélium [8]. Il est donc nécessaire de comprendre
+                comment fonctionne le confinement magnétique mais aussi d'essayer de maximiser le temps de
+                confinement pour obtenir une centrale de production d'électricité par fusion contrôlée [7].
             </p>
             <p>
-                Dans le cadre de la fusion nucléaire la matière est à très haute température et forte pression à l’état
-                de magma (gaz ionisé). Aucun matériau ne peut résister aux températures extrêmes (de l’ordre de
+                Dans le cadre de la fusion nucléaire la matière est à très haute température et forte pression à l'état
+                de magma (gaz ionisé). Aucun matériau ne peut résister aux températures extrêmes (de l'ordre de
                 cent cinquante millions de degré) du plasma [2]. De plus, le contact entre les parois du système
-                contenant le magma et le magma générerait des pertes d’énergie sous forme de chaleur qui nuirait à
-                la réaction de fusion : le système consommerait alors plus d’énergie que ce qu’il produirait [6]. Afin
+                contenant le magma et le magma générerait des pertes d'énergie sous forme de chaleur qui nuirait à
+                la réaction de fusion : le système consommerait alors plus d'énergie que ce qu'il produirait [6]. Afin
                 de remédier à ces problèmes, il faut mettre en place un confinement immatériel. On utilise donc les
-                propriétés des champs électromagnétiques pour maintenir le magma dans l’enceinte sans aucun
+                propriétés des champs électromagnétiques pour maintenir le magma dans l'enceinte sans aucun
                 contact direct avec les parois.
             </p>
             <p>
                 Il existe plusieurs systèmes dont le but est de confiner un magma : le stellarator, le spheromak et
                 les tokamaks sphériques ou toriques [6]. La durée de maintien du plasma dans le tokamak varie de
-                quelques millisecondes à quelques minutes seulement [2]. Afin d’obtenir un réacteur commercial
+                quelques millisecondes à quelques minutes seulement [2]. Afin d'obtenir un réacteur commercial
                 électrogène, il faut parvenir à maximiser le temps de confinement dans un tokamak comme le
-                réacteur expérimental ITER qui permettra de valider la sureté et l’efficacité de telles machines [1].
+                réacteur expérimental ITER qui permettra de valider la sureté et l'efficacité de telles machines [1].
             </p>
             <p>
-                Un tokamak a pour but d’assurer le confinement du magma en limitant le déplacement horizontal
+                Un tokamak a pour but d'assurer le confinement du magma en limitant le déplacement horizontal
                 et vertical des particules chargées [7]. Les particules chargées constituant le gaz ionisé décrivent des
                 trajectoires hélicoïdales autour des lignes de champ magnétique [3]. Dans un solénoïde infini, une
                 telle particule progresserait en suivant les lignes de champ uniformes et resterait donc confinée. La
@@ -120,58 +148,49 @@
                 une hélice autour des lignes de champ qui forment désormais un cercle [4].
             </p>
             <p>
-                Bien que l’avenir de la fusion nucléaire semble prometteur, il n’en reste pas moins incertain.
-                Sébastien Balibar, physicien français membre de l’académie des sciences, considère qu’investir dans
-                une méthode de fusion encore à l’état expérimental ne permet pas de faire face à l’urgence de la
+                Bien que l'avenir de la fusion nucléaire semble prometteur, il n'en reste pas moins incertain.
+                Sébastien Balibar, physicien français membre de l'académie des sciences, considère qu'investir dans
+                une méthode de fusion encore à l'état expérimental ne permet pas de faire face à l'urgence de la
                 situation environnementale [9] tout en répondant aux besoins croissants de la population mondiale
-                [5]. D’autant plus que le projet le plus avancé (ITER) prévoit de créer les premiers plasmas
+                [5]. D'autant plus que le projet le plus avancé (ITER) prévoit de créer les premiers plasmas
                 expérimentaux au plus tôt en 2025 [1]. Malgré le financement des 35 pays membres du projet, la
                 complexité technique et logistique de ce programme [8] ne cesse de retarder la construction et
-                d’augmenter son coût [10]. Reste à savoir si la fusion nucléaire saura gagner la confiance des
+                d'augmenter son coût [10]. Reste à savoir si la fusion nucléaire saura gagner la confiance des
                 générations futures [5].
             </p>
-        </section>
-        <section>
             <h2>Problématique retenue</h2>
             <p>
-                Il s’agit de comprendre les phénomènes et les propriétés physiques des champs magnétiques qui
-                permettent de confiner la matière à l’état de magma afin de déterminer les principales
-                caractéristiques d’un tokamak et de maximiser le temps de confinement.
+                Il s'agit de comprendre les phénomènes et les propriétés physiques des champs magnétiques qui
+                permettent de confiner la matière à l'état de magma afin de déterminer les principales
+                caractéristiques d'un tokamak et de maximiser le temps de confinement.
             </p>
-        </section>
-        <section>
             <h2>Objectifs du TIPE</h2>
             <p>
             <ul>
                 <li>
-                    Déterminer les propriétés élémentaires qui permettent le confinement magnétique d’un magma
-                    à l’aide d’une étude théorique validée par des simulations informatiques.
+                    Déterminer les propriétés élémentaires qui permettent le confinement magnétique d'un magma
+                    à l'aide d'une étude théorique validée par des simulations informatiques.
                 </li>
                 <li>
-                    Définir un modèle simplifié d’un tokamak afin de mener une étude théorique.
+                    Définir un modèle simplifié d'un tokamak afin de mener une étude théorique.
                     2
                 </li>
                 <li>
-                    Résoudre numériquement du système d’équations différentielles qui régit le mouvement d’une
+                    Résoudre numériquement du système d'équations différentielles qui régit le mouvement d'une
                     particule dans le magma dans le but de déterminer la durée du confinement.
                 </li>
                 <li>
-                    Adapter le modèle du tokamak afin d’augmenter le temps de confinement.
+                    Adapter le modèle du tokamak afin d'augmenter le temps de confinement.
                 </li>
             </ul>
             </p>
-        </section>
-        <section>
             <h2>Présentation</h2>
-            <figure class="content-pic-figure">
-                <iframe width="960" height="540"
-                    src="../../ressource/projects/tipe/ALLEMAND_Fabien_TIPE_presentation_code.pdf"></iframe>
-            </figure>
-        </section>
-        <section>
+            <div class="row gx-4 gx-lg-5 justify-content-center py-4">
+                <iframe src="../../ressources/projects/tipe/ALLEMAND_Fabien_TIPE_presentation_code.pdf"></iframe>
+            </div>
             <h2>Références bibliographiques</h2>
             <p>
-                [1] ITER : ITER, c’est quoi ? : https://www.iter.org/fr/proj/inafewlines<br>
+                [1] ITER : ITER, c'est quoi ? : https://www.iter.org/fr/proj/inafewlines<br>
                 [2] CEA Cadarache : TORE SUPRA :
                 https://cadarache.cea.fr/cad/Documents/Presentation/Fiche-Tore_Supra_FR%20final.pdf<br>
                 [3] R. Dumont : Dynamique des particules rapides dans les plasmas de fusion magnétique :
@@ -197,19 +216,24 @@
                 surcouts-1087327.html<br>
             </p>
             <!-- <p>
-                There are many <a href="https://www.youtube.com/playlist?list=PLtMbur2RQyXREELudU3vHFtoD9mccnvOi"
-                    target="_blank">videos</a> covering all different aspects of nuclear fusion.
-            </p> -->
-        </section>
-    </main>
+                    There are many <a href="https://www.youtube.com/playlist?list=PLtMbur2RQyXREELudU3vHFtoD9mccnvOi"
+                        target="_blank">videos</a> covering all different aspects of nuclear fusion.
+                </p> -->
+        </div>
+    </section>
 
-    <hr>
-
-    <footer>
-        <p class="center">
-            &copy; Fabien Allemand
-        </p>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Fabien Allemand</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

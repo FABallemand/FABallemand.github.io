@@ -1,250 +1,283 @@
 <!doctype html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Fabien Allemand | Audio Amplifier</title>
-    <meta name="author" content="Fabien Allemand">
-    <meta name="description" content="Projects">
-    <link rel="icon" href="ressource/icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/sidenav.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Fabien Allemand" />
+    <title>FA | Audio Amplifier</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../ressources/icon.jpg" type="image/x-icon">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../css/styles.css" rel="stylesheet" />
+    <link href="../../css/my_styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <section id="header" class="header">
-                <h1 class="h1">
-                    <span class="nowrap">Audio Amplifier</span>
-                </h1>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Fabien Allemand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#about">About</a></li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="html/projects.html">All Projects</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">School Projects</a></li>
+                            <li><a class="dropdown-item" href="#!">Personnal Projects</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                </ul>
+                <!-- <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form> -->
+                <figure class="contact-pic-figure">
+                    <a href="mailto:allemand.fabien@orange.fr" target="_blank">
+                        <img class="img-fluid" src="../../ressources/email.png" alt="Linked-In" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+                <figure class="contact-pic-figure">
+                    <a href="https://www.linkedin.com/in/fabien-allemand-309b93208/" target="_blank">
+                        <img class="img-fluid" src="../../ressources/linked_in.png" alt="Linked-In" width="96"
+                            height="96" class="contact-pic-img">
+                    </a>
+                </figure>
+                <figure class="contact-pic-figure">
+                    <a href="https://github.com/FABallemand" target="_blank">
+                        <img class="img-fluid" src="../../ressources/github.png" alt="GitHub" width="96" height="96"
+                            class="contact-pic-img">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Audio Amplifier</h1>
                 <date>2022</date>
                 <address>Strasbourg, France</address>
-            </section>
+            </div>
         </div>
     </header>
 
-    <div class="sidenav">
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html">Home</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#news">News</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#education">Education</a></button>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#work_exp">Internship</a></button>
-        </div>
-        <!-- <div class="subnav">
-			<button class="subnavbtn"><a href="html/equipement.html">Equipement</a></button>
-		</div> -->
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../projects.html">Projects</a></button>
-            <div class="subnav-content">
-                <a href="../projects.html#programming" class="subnav-content-cat">Programming 🖥</a>
-                <a href="../projects.html#3D_printing" class="subnav-content-cat">3D Printing 🔩</a>
-                <a href="../projects.html#electronics" class="subnav-content-cat">Electronics 🔋</a>
-            </div>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="#">Others</a></button>
-            <div class="subnav-content">
-                <a href="../readings.html" class="subnav-content-cat">What I read 📖</a>
-                <a href="../sport.html" class="subnav-content-cat">Sport 👟</a>
-                <a href="../trips.html" class="subnav-content-cat">Trips 🛫</a>
-            </div>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><a href="../../index.html#contact">Contact</a></button>
-        </div>
-    </div>
+    <!-- Article-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <section>
+                <h2>
+                    The Sound of DIY
+                </h2>
+                <p>
+                    <!-- I was (and I am still) very impressed by the DIY bluetooth speaker made by <a href="https://diyperks.com/" target="_blank">DIYPerks</a> and I always wanted to do something similar.  -->
+                    I had already made/improved a little portable speaker by reusing the circuit board of an old cheap
+                    speaker, pairing it with a better speaker and putting it in a "stylish" (but impractical) wooden
+                    case.
+                </p>
+                <p>
+                    But having learnt how to create my own PCBs (with Iron Peroxyde III) I wanted to create my very own
+                    speakers to use on my desk. Let me clarify: I wanted a set of speakers that I could use both via
+                    cable
+                    with my computer and via bluetooth with my phone. The final speaker was supposed to seat on my desk,
+                    serving as a screen stand for my main monitor. 🖥️
+                </p>
+                <p>
+                    I already had a pair of old JBL mid-range speakers and I found a <a
+                        href="https://www.alldatasheet.fr/datasheet-pdf/pdf/25037/STMICROELECTRONICS/TDA2005.html"
+                        target="_blank">TDA-2005</a> in my garage. All was left to do was to mount everything together!!
+                    🔊
+                </p>
+                <p>
+                    I was far from thinking it was the beginning of a three-year long project...
+                </p>
+                <h2>
+                    The Amplifier Circuit
+                </h2>
+                <p>
+                    I was really pleased when I saw there were already a couple examples in the <a
+                        href="https://www.alldatasheet.fr/datasheet-pdf/pdf/25037/STMICROELECTRONICS/TDA2005.html"
+                        target="_blank">TDA-2005</a> datasheet showing different ways to use it. I settled for a basic
+                    circuit using a single IC to drive two speakers.
+                </p>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/circuit.PNG"
+                        alt="Circuit diagram" title="Circuit diagram">
+                </div>
+                <h2>
+                    Iron Peroxyde Age
+                </h2>
+                <p>
+                    I designed the circuit using <a href="https://www.kicad.org/" target="_blank">KiCad</a> and made the
+                    first board. After testing: it did not work. So I made another one with a couple changes: same
+                    result.
+                    For my defense, I was stuck with single face PCB so the wiring was not easy and certainly not
+                    ideal... 😵‍💫
+                </p>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/kicad_1.PNG"
+                        alt="First PCB design" title="First PCB design">
+                </div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/pcb_11.jpg"
+                        alt="First Amplifier" title="First Amplifier">
+                </div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/pcb_12.jpg"
+                        alt="First Amplifier" title="First Amplifier">
+                </div>
+                <p>
+                    As I didn't know what was wrong with the board and I had other priorities (mainly studying 👨🏻‍🏫)
+                    I put the project aside for a while...
+                </p>
+                <h2>
+                    Industrial Revolution
+                </h2>
+                <p>
+                    ...until I learnt how to use the <a
+                        href="https://www.lpkf.com/en/industries-technologies/research-in-house-pcb-prototyping/produkte/lpkf-protomat-s64"
+                        target="_blank">Protomat S64</a> that was available at my new school's <a
+                        href="http://fablab.telecom-ps.unistra.fr/doku.php" target="_blank">FabLab</a>. I did not want
+                    to
+                    rush things again so I wanted to test the circuit on breadboards. Due to the specific pin layout of
+                    the amplifier
+                    IC I had to create a custom PCB to test everything.
+                </p>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/pinout.PNG"
+                        alt="tda-2005 pinout" title="TDA-2005 pinout">
+                </div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/socket_1.jpg"
+                        alt="Prototyping socket" title="Prototyping socket">
+                </div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/socket_2.jpg"
+                        alt="Prototyping socket with TDA-2005" title="Prototyping socket with TDA-2005">
+                </div>
+                <p>
+                    Then I re-created the circuit on the breadboard and... 🎶
+                </p>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <video controls>
+                        <source src="../../ressources/projects/tda_2005_audio_amp/test_1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h2>
+                    Another Custom PCB
+                </h2>
+                <p>
+                    Without hesitation I fired up KiCAD, designed the PCB and headed to the FabLab to engrave it. That
+                    was
+                    really easy and... oh... 🤭
+                </p>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/kicad_2.png"
+                        alt="Second Major Revision of the PCB Design" title="Second Major Revision of the PCB Design">
+                </div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/pcb_fail.jpg"
+                        alt="First attempt at engraving the PCB" title="First attempt at engraving the PCB">
+                </div>
+                <p>
+                    The project was put on stand by until the engraving machine was repaired... but as soon as it
+                    started
+                    working properly I rushed to the FabLab once again and...HELL YEAH!! 🤘
+                </p>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/pcb_21.jpg"
+                        alt="First Working PCB" title="First Working PCB">
+                </div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/pcb_22.jpg"
+                        alt="First Working PCB" title="First Working PCB">
+                </div>
+                <p>
+                    After a couple more hours working at the FabLab, I finally had a perfectly functionnal audio
+                    amplifier. Take a listen!! 🎸
+                </p>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/soldering_1.jpg"
+                        alt="Soldering Components on the PCB" title="Soldering Components on the PCB">
+                </div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <video controls>
+                        <source src="../../ressources/projects/tda_2005_audio_amp/test_2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h2>
+                    Bluetooth
+                </h2>
+                <p>
+                    It was now time to go from the proof of concept to the actual product I originaly wanted to build: a
+                    speaker that I could use both with my computer and my phone.
+                </p>
+                <p>
+                    Eventhough there are cheap and fairly usable Bluetooth board available online, adding Bluetooth
+                    functionnalities to the board is not necessarily easy.
+                </p>
+                <p>
+                    First, I had to use a voltage regulator to provide 5v to the Bluetooth module (note: I want to power
+                    the amplifier with more than 5v in order to drive the speakers). Then I had to had a button to shift
+                    between wired and Bluetooth mode.
+                </p>
+                <p>
+                    But with all the experience accumulated during the three years of (non continuous) work on this
+                    project, I managed to make it work first try!! ⏯
+                </p>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <img class="img-fluid" src="../../ressources/projects/tda_2005_audio_amp/kicad_3.png"
+                        alt="Third Major Revision of the PCB Design" title="Third Major Revision of the PCB Design">
+                </div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 justify-content-center py-4">
+                    <video controls>
+                        <source src="../../ressources/projects/tda_2005_audio_amp/test_3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h2>
+                    Case
+                </h2>
+                <p>
 
-    <main>
-        <section>
-            <h2>
-                The Sound of DIY
-            </h2>
-            <p>
-                <!-- I was (and I am still) very impressed by the DIY bluetooth speaker made by <a href="https://diyperks.com/" target="_blank">DIYPerks</a> and I always wanted to do something similar.  -->
-                I had already made/improved a little portable speaker by reusing the circuit board of an old cheap
-                speaker, pairing it with a better speaker and putting it in a "stylish" (but impractical) wooden case.
-            </p>
-            <p>
-                But having learnt how to create my own PCBs (with Iron Peroxyde III) I wanted to create my very own
-                speakers to use on my desk. Let me clarify: I wanted a set of speakers that I could use both via cable
-                with my computer and via bluetooth with my phone. The final speaker was supposed to seat on my desk,
-                serving as a screen stand for my main monitor. 🖥️
-            </p>
-            <p>
-                I already had a pair of old JBL mid-range speakers and I found a <a
-                    href="https://www.alldatasheet.fr/datasheet-pdf/pdf/25037/STMICROELECTRONICS/TDA2005.html"
-                    target="_blank">TDA-2005</a> in my garage. All was left to do was to mount everything together!! 🔊
-            </p>
-            <p>
-                I was far from thinking it was the beginning of a three-year long project...
-            </p>
-        </section>
-        <section>
-            <h2>
-                The Amplifier Circuit
-            </h2>
-            <p>
-                I was really pleased when I saw there were already a couple examples in the <a
-                    href="https://www.alldatasheet.fr/datasheet-pdf/pdf/25037/STMICROELECTRONICS/TDA2005.html"
-                    target="_blank">TDA-2005</a> datasheet showing different ways to use it. I settled for a basic
-                circuit using a single IC to drive two speakers.
-            </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/circuit.PNG" alt="Circuit diagram"
-                    title="Circuit diagram" width="485" height="371">
-            </figure>
-        </section>
-        <section>
-            <h2>
-                Iron Peroxyde Age
-            </h2>
-            <p>
-                I designed the circuit using <a href="https://www.kicad.org/" target="_blank">KiCad</a> and made the
-                first board. After testing: it did not work. So I made another one with a couple changes: same result.
-                For my defense, I was stuck with single face PCB so the wiring was not easy and certainly not ideal... 😵‍💫
-            </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/kicad_1.PNG" alt="First PCB design"
-                    title="First PCB design" width="485" height="371">
-            </figure>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/pcb_11.jpg" alt="First Amplifier"
-                    title="First Amplifier" width="485" height="371">
-            </figure>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/pcb_12.jpg" alt="First Amplifier"
-                    title="First Amplifier" width="485" height="371">
-            </figure>
-            <p>
-                As I didn't know what was wrong with the board and I had other priorities (mainly studying 👨🏻‍🏫) I put the project aside for a while...
-            </p>
-        </section>
-        <section>
-            <h2>
-                Industrial Revolution
-            </h2>
-            <p>
-                ...until I learnt how to use the <a
-                    href="https://www.lpkf.com/en/industries-technologies/research-in-house-pcb-prototyping/produkte/lpkf-protomat-s64"
-                    target="_blank">Protomat S64</a> that was available at my new school's <a
-                    href="http://fablab.telecom-ps.unistra.fr/doku.php" target="_blank">FabLab</a>. I did not want to
-                rush things again so I wanted to test the circuit on breadboards. Due to the specific pin layout of the amplifier
-                IC I had to create a custom PCB to test everything.
-            </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/pinout.PNG" alt="tda-2005 pinout"
-                    title="TDA-2005 pinout" width="640" height="249">
-            </figure>
-            <figure class="content-pic-figure-v">
-                <img src="../../ressource/projects/tda_2005_audio_amp/socket_1.jpg" alt="Prototyping socket"
-                    title="Prototyping socket" width="270" height="480">
-            </figure>
-            <figure class="content-pic-figure-v">
-                <img src="../../ressource/projects/tda_2005_audio_amp/socket_2.jpg"
-                    alt="Prototyping socket with TDA-2005" title="Prototyping socket with TDA-2005" width="270"
-                    height="480">
-            </figure>
-            <p>
-                Then I re-created the circuit on the breadboard and... 🎶
-            </p>
-            <figure class="content-pic-figure">
-                <video width="270" height="480" controls>
-                    <source src="../../ressource/projects/tda_2005_audio_amp/test_1.mp4" type="video/mp4">
-                </video>
-            </figure>
-        </section>
-        <section>
-            <h2>
-                Another Custom PCB
-            </h2>
-            <p>
-                Without hesitation I fired up KiCAD, designed the PCB and headed to the FabLab to engrave it. That was
-                really easy and... oh... 🤭
-            </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/kicad_2.png" alt="Second Major Revision of the PCB Design"
-                    title="Second Major Revision of the PCB Design" width="485" height="371">
-            </figure>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/pcb_fail.jpg"
-                    alt="First attempt at engraving the PCB" title="First attempt at engraving the PCB" width="480"
-                    height="270">
-            </figure>
-            <p>
-                The project was put on stand by until the engraving machine was repaired... but as soon as it started
-                working properly I rushed to the FabLab once again and...HELL YEAH!! 🤘
-            </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/pcb_21.jpg" alt="First Working PCB"
-                    title="First Working PCB" width="480" height="270">
-            </figure>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/pcb_22.jpg" alt="First Working PCB"
-                    title="First Working PCB" width="480" height="270">
-            </figure>
-            <p>
-                After a couple more hours working at the FabLab, I finally had a perfectly functionnal audio amplifier. Take a listen!! 🎸
-            </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/soldering_1.jpg" alt="Soldering Components on the PCB"
-                    title="Soldering Components on the PCB" width="480" height="270">
-            </figure>
-            <figure class="content-pic-figure">
-                <video width="270" height="480" controls>
-                    <source src="../../ressource/projects/tda_2005_audio_amp/test_2.mp4" type="video/mp4">
-                </video>
-            </figure>
-        </section>
-        <section>
-            <h2>
-                Bluetooth
-            </h2>
-            <p>
-                It was now time to go from the proof of concept to the actual product I originaly wanted to build: a speaker that I could use both with my computer and my phone.
-            </p>
-            <p>
-                Eventhough there are cheap and fairly usable Bluetooth board available online, adding Bluetooth functionnalities to the board is not necessarily easy.
-            </p>
-            <p>
-                First, I had to use a voltage regulator to provide 5v to the Bluetooth module (note: I want to power the amplifier with more than 5v in order to drive the speakers). Then I had to had a button to shift between wired and Bluetooth mode.
-            </p>
-            <p>
-                But with all the experience accumulated during the three years of (non continuous) work on this project, I managed to make it work first try!! ⏯
-            </p>
-            <figure class="content-pic-figure">
-                <img src="../../ressource/projects/tda_2005_audio_amp/kicad_3.png" alt="Third Major Revision of the PCB Design"
-                    title="Third Major Revision of the PCB Design" width="485" height="371">
-            </figure>
-            <figure class="content-pic-figure">
-                <video width="270" height="480" controls>
-                    <source src="../../ressource/projects/tda_2005_audio_amp/test_3.mp4" type="video/mp4">
-                </video>
-            </figure>
-        </section>
-        <section>
-            <h2>
-                Case
-            </h2>
-            <p>
+                </p>
+        </div>
+    </section>
 
-            </p>
-        </section>
-    </main>
-
-    <hr>
-
-    <footer>
-        <p class="center">
-            &copy; Fabien Allemand
-        </p>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Fabien Allemand</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
