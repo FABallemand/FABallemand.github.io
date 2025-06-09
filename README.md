@@ -3,7 +3,7 @@
 ## ...
 
 ## ToDo
-- Project: personal websites, projet challenge entreprendre, projet ingénieur
+- Project: Projet RSE Scribe, Semaine PROCCI
 - Fix iframes
 - Fix img fluid
 - Fix videos
