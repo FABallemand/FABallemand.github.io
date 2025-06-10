@@ -3,7 +3,7 @@
 ## ...
 
 ## ToDo
-- Project: Projet RSE Scribe, Semaine PROCCI
+- Project: ...
 - Fix iframes
 - Fix img fluid
 - Fix videos
